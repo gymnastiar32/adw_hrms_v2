@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>adw | HRMS</title>
+
+    <!-- <link rel="stylesheet" href="css/now-ui-kit.css"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/all.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/now-ui-kit.css">
+    <link href="css/bootstrap-table.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="d-flex">
+            <div class="navbar-brand d-flex align-items-center justify-content-center">
+                <span style="color: #005eb596; font-weight:700; font-size:36px;">HRMS</span>
+            </div>
+            <div class="navbar-header d-flex align-items-center">
+                <a class="navbar-minimalize minimalize-styl-2 btn btn-info" href="#"><i class="fa fa-bars"></i> </a>
+
+            </div>
+        </div>
+        <ul class="nav navbar-top-links navbar-right d-flex align-items-center flex-nowrap">
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="far fa-envelope"></i> <span class="label label-warning">16</span>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <div class="media-body">
+                                <small class="float-right pl-1">46h ago</small>
+                                <strong>Admin</strong> Submit data on Posisi.
+                                <br>
+                                <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <div class="media-body ">
+                                <small class="float-right pl-1">5h ago</small>
+                                <strong>User</strong> send a message.
+                                <br>
+                                <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="mailbox.html" class="dropdown-item">
+                                <strong>See All Messages </strong> <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="far fa-bell"></i> <span class="label label-primary">8</span>
+                </a>
+                <ul class="dropdown-menu dropdown-alerts">
+                    <li>
+                        <a href="mailbox.html" class="dropdown-item">
+                            <div>
+                                <strong>1 New data on Posisi</strong>
+                                <span class="float-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a href="profile.html" class="dropdown-item">
+                            <div>
+                                <strong>You have 1 messages</strong>
+                                <span class="float-right text-muted small">12 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a href="grid_options.html" class="dropdown-item">
+                            <div>
+                                <strong>28 New data on Proyek</strong>
+                                <span class="float-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="alert.html" class="dropdown-item">
+                                <strong>See All Alerts </strong> <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <img class="cog-icon" src="img/cog.svg" alt="cog-icon">
+                </a>
+                <ul class="dropdown-menu dropdown-setting" aria-labelledby="dropdownMenuLink">
+                    <li>
+                        <a class="dropdown-item" href="edit_profile.html"><strong>Edit Profile</strong></a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a class="dropdown-item" href="login.html"><strong>Log Out</strong></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown profile d-flex flex-column">
+                <button class="btn-link d-flex align-items-center justify-content-between dropdown-toggle"
+                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="fas fa-chevron-down"></span>
+                    <span>Admin</span>
+                    <img class="profile-img" src="img/a4.jpg" alt="">
+                </button>
+                <ul class="dropdown-menu dropdown-profile">
+                    <li>
+                        <a href="#"
+                            class="dropdown-profile-box active d-flex align-items-center justify-content-between">
+                            <span class="dropdown-item" href="#">
+                                <strong>Admin</strong>
+                            </span>
+                            <div class="role d-flex align-items-center justify-content-center">
+                                <span>H</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-profile-box d-flex align-items-center justify-content-between">
+                            <span class="dropdown-item" href="#">
+                                <strong>User</strong>
+                            </span>
+                            <div class="role d-flex align-items-center justify-content-center">
+                                <span>U</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="#" class="dropdown-item">
+                                <strong>See All Users </strong> <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse d-flex flex-column">
+                <ul class="nav metismenu" id="side-menu">
+                    <li>
+                        <a href="index.html"><i class="fa fa-user"></i> <span class="nav-label">Talent</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Karyawan</a></li>
+                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
+                            <li><a href="dashboard_3.html">Pengajuan Training</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fas fa-calendar-alt"></i> <span class="nav-label">Pengajuan
+                                Cuti</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Karyawan</a></li>
+                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
+                            <li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-file-alt"></i> <span class="nav-label">Asset</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Karyawan</a></li>
+                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
+                            <li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-project-diagram"></i> <span class="nav-label">e-KPI</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Karyawan</a></li>
+                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
+                            <li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-database"></i> <span class="nav-label">Master Data</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Posisi</a></li>
+                            <li><a href="dashboard_2.html">Job Title</a></li>
+                            <li><a href="dashboard_3.html">Divisi/Departemen</a></li>
+                            <li><a href="dashboard_3.html">Template Email</a></li>
+                            <li><a href="dashboard_3.html">Tingkat Pendidikan Terakhir</a></li>
+                            <li><a href="dashboard_3.html">Domisili</a></li>
+                            <li><a href="dashboard_3.html">Hirarki</a></li>
+                            <li><a href="dashboard_3.html">Proyek</a></li>
+                            <li><a href="dashboard_3.html">Menu Management</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav metismenu">
+                    <li class="nav-link">
+                        <a href="login.html">
+                            <img class="logout-icon" src="img/logout.svg" alt="">
+                            <span class="logout">Log Out</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper" class="gray-bg">
+            <div class="wrapper border-bottom white-bg page-heading">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Empty Page</h2>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#">Empty</a>
+                            </li>
+                            <li class="breadcrumb-item active">
+                                <strong>Empty Page</strong>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper wrapper-content animated fadeInRightBig">
+                <div class="middle-box text-center white-bg animated fadeInRightBig">
+                    <h3 class="font-bold">This is page content</h3>
+                    <div class="error-desc">
+                        You can create here any grid layout you want. And any variation layout you imagine:) Check out
+                        main dashboard and other site. It use many different layout.
+                        <br /><a href="index.html" class="btn btn-primary m-t">Dashboard</a>
+                    </div>
+                </div>
+                <div class="middle-box text-center white-bg animated fadeInRightBig">
+                    <h3 class="font-bold">This is page content</h3>
+                    <div class="error-desc">
+                        You can create here any grid layout you want. And any variation layout you imagine:) Check out
+                        main dashboard and other site. It use many different layout.
+                        <br /><a href="index.html" class="btn btn-primary m-t">Dashboard</a>
+                    </div>
+                </div>
+                <div class="middle-box text-center white-bg animated fadeInRightBig">
+                    <h3 class="font-bold">This is page content</h3>
+                    <div class="error-desc">
+                        You can create here any grid layout you want. And any variation layout you imagine:) Check out
+                        main dashboard and other site. It use many different layout.
+                        <br /><a href="index.html" class="btn btn-primary m-t">Dashboard</a>
+                    </div>
+                </div>
+                <div class="middle-box text-center white-bg animated fadeInRightBig">
+                    <h3 class="font-bold">This is page content</h3>
+                    <div class="error-desc">
+                        You can create here any grid layout you want. And any variation layout you imagine:) Check out
+                        main dashboard and other site. It use many different layout.
+                        <br /><a href="index.html" class="btn btn-primary m-t">Dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="footer">
+            <div class="float-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> Example Company &copy; 2014-2018
+            </div>
+        </div> -->
+    </div>
+
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <script src="js/bootstrap-table.js"></script>
+    <script src="js/bootstrap-table-export.js"></script>
+    <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+    <script src="js/now-ui-kit.js?v=1.2.2" type="text/javascript"></script>
+
+    <script>
+        function numberFormatter(value, row, index) {
+            var options = $('#tablekelas').bootstrapTable('getOptions')
+            // alert(options["pageNumber"] + " " + options["pageSize"])
+            //  console.log(options["pageSize"]);
+            var tes = 0
+            if (!isNaN(options['pageSize'])) { //cek pagesize angka atau tidak, klo angka jalankan kode dibawah
+                tes = ((options["pageNumber"] - 1) * options["pageSize"])
+            }
+            return index + 1 + tes;
+        }
+
+        function actionFormatter(value, row, index) {
+            return [
+                '<a href="<?= site_url("Kelas/detail_kelas/") ?>' + value + '" class="btn btn-primary ">Detail</a>',
+                ' ',
+                '<a href="<?= site_url("Kelas/updateform/") ?>' + value + '" class="btn btn-success ">Edit</a>',
+                ' ',
+                '<a href="<?= site_url("Kelas/delete_kelas/") ?>' + value + '" class="btn btn-danger"  >Hapus</a>',
+            ].join('');
+        }
+
+        function detailFormatter(index, row) {
+            var html = []
+            const excludeType = ["Undefined", "object"];
+            $.each(row, function (key, value) {
+                if (!excludeType.includes(typeof value)) {
+                    html.push('<p><b>' + key + ':</b>' + value + '</p>')
+                }
+            })
+            return html.join('')
+        }
+
+        $(document).ready(function () {
+            var table = $('#tablekelas')
+            var $button = $('#button')
+
+            $button.click(function () {
+                alert('Kelasnnya :  ' + JSON.stringify(table.bootstrapTable('getSelections')[0]["nama_kelas"]))
+            })
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>adw | HRMS</title>
+
+    <!-- <link rel="stylesheet" href="css/now-ui-kit.css"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/all.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/now-ui-kit.css">
+    <link href="css/bootstrap-table.css" rel="stylesheet">
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="d-flex">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="d-flex">
+                <div class="navbar-brand d-flex align-items-center justify-content-center">
+                    <span style="color: #005eb596; font-weight:700; font-size:36px;">HRMS</span>
+                </div>
+                <div class="navbar-header d-flex align-items-center ">
+                    <ul class="nav navbar-mainmenu">
+                        <li class="mr-1"><a class="active" href="karyawan.html">Talent</a></li>
+                        <li class="mr-1"><a href="form_cuti.html">Pengajuan Cuti</a></li>
+                        <li class="mr-1"><a href="master_asset.html">Asset</a></li>
+                        <li class="mr-1"><a href="ekpi_master">e-KPI</a></li>
+                        <li><a href="posisi.html">Master Data</a></li>
+                    </ul>
+                    <!-- <form class="search-form">
+                        <div class="form-group input-group no-border flex-nowrap">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-search"
+                                        style="color: #878F92 ;"></i></span>
+                            </div>
+                            <input type="text" class="form-control " placeholder="Search...">
+                        </div>
+                    </form> -->
+                </div>
+            </div>
+            <ul class="nav navbar-top-links navbar-right d-flex align-items-center flex-nowrap">
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="far fa-envelope"></i> <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <div class="media-body">
+                                    <small class="float-right pl-1">46h ago</small>
+                                    <strong>Admin</strong> Submit data on Posisi.
+                                    <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <div class="media-body ">
+                                    <small class="float-right pl-1">5h ago</small>
+                                    <strong>User</strong> send a message.
+                                    <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html" class="dropdown-item">
+                                    <strong>See All Messages </strong> <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="far fa-bell"></i> <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html" class="dropdown-item">
+                                <div>
+                                    <strong>1 New data on Posisi</strong>
+                                    <span class="float-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a href="profile.html" class="dropdown-item">
+                                <div>
+                                    <strong>You have 1 messages</strong>
+                                    <span class="float-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a href="grid_options.html" class="dropdown-item">
+                                <div>
+                                    <strong>28 New data on Proyek</strong>
+                                    <span class="float-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="alert.html" class="dropdown-item">
+                                    <strong>See All Alerts </strong> <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <img class="cog-icon" src="img/cog.svg" alt="cog-icon">
+                    </a>
+                    <ul class="dropdown-menu dropdown-setting" aria-labelledby="dropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="edit_profile.html"><strong>Edit Profile</strong></a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item" href="login.html"><strong>Log Out</strong></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown profile d-flex flex-column">
+                    <button class="btn-link d-flex align-items-center justify-content-between dropdown-toggle"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fas fa-chevron-down"></span>
+                        <span>Admin</span>
+                        <img class="profile-img" src="img/a4.jpg" alt="">
+                    </button>
+                    <ul class="dropdown-menu dropdown-profile">
+                        <li>
+                            <a href="#"
+                                class="dropdown-profile-box active d-flex align-items-center justify-content-between">
+                                <span class="dropdown-item" href="#">
+                                    <strong>Admin</strong>
+                                </span>
+                                <div class="role d-flex align-items-center justify-content-center">
+                                    <span>H</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-profile-box d-flex align-items-center justify-content-between">
+                                <span class="dropdown-item" href="#">
+                                    <strong>User</strong>
+                                </span>
+                                <div class="role d-flex align-items-center justify-content-center">
+                                    <span>U</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="#" class="dropdown-item">
+                                    <strong>See All Users </strong> <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse d-flex flex-column">
+                <ul class="nav metismenu" id="side-menu">
+                    <li>
+                        <h2>Talent</h2>
+                    </li>
+                    <li class="nav-link">
+                        <a class="active" href="#"><span class="nav-label">Karyawan</span></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#"><span class="nav-label">Calon Karyawan</span></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="pengajuan_training.html"><span class="nav-label">Pengajuan Training</span></a>
+                    </li>
+                </ul>
+                <ul class="nav metismenu">
+                    <li class="nav-link">
+                        <a href="login.html">
+                            <img class="logout-icon" src="img/logout.svg" alt="">
+                            <span class="logout">Log Out</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper">
+            <div class="wrapper border-bottom white-bg page-heading p-0 pb-4">
+                <div class="col-sm-12 p-0">
+                    <h2>Karyawan</h2>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#">Talent</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <strong>Karyawan</strong>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="wrapper wrapper-content animated fadeInRightBig">
+                <div class="middle-box detailKaryawan">
+                    <h3>Detail Karyawan</h3>
+                    <hr class="hr-line-solid">
+                    <ul class="nav nav-pills nav-pills-primary">
+                        <li class="nav-item"><a class="nav-link active" href="#pill1" data-toggle="tab">Identitas
+                                Karyawan</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pill2" data-toggle="tab">Lampiran</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pill3" data-toggle="tab">Kontrak</a></li>
+                    </ul>
+                    <div class="tab-content tab-space">
+                        <div class="tab-pane active" id="pill1">
+                            <div class="container">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col-12 pl-4 pr-4">
+                                            <h4><strong>Identitas</strong></h4>
+                                        </div>
+                                        <div class="col-lg-6 p-4">
+                                            <label for="nama">Nama Karyawan</label>
+                                            <input type="text" class="form-control no-border" name="nama" id="nama"
+                                                value="example">
+                                        </div>
+                                        <div class="col-lg-6 p-4">
+                                            <label for="nik">NIK</label>
+                                            <input type="text" class="form-control no-border" name="nik" id="nik"
+                                                value="35171112010007">
+                                        </div>
+                                    </div>
+                                    <hr class="hr-line-solid">
+                                    <div class="form-row">
+                                        <div class="col-12 p-4">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h4><strong>Data Diri</strong></h4>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h5 class="m-0 mt-4"><strong>Alamat</strong></h5>
+                                                </div>
+                                                <div class="col-lg-12 mt-4">
+                                                    <label for="alamat">Alamat Karyawan</label>
+                                                    <input type="text" class="form-control no-border" name="alamat"
+                                                        id="alamat" value="Jl. Sesama No. 45 RT/RW 001/01">
+                                                </div>
+                                                <div class="col-lg-4 mt-4">
+                                                    <label for="alamat">Kota/Kabupaten</label>
+                                                    <input type="text" class="form-control no-border" name="alamat"
+                                                        id="alamat" value="Jakarta Timur">
+                                                </div>
+                                                <div class="col-lg-4 mt-4">
+                                                    <label for="alamat">Provinsi</label>
+                                                    <input type="text" class="form-control no-border" name="alamat"
+                                                        id="alamat" value="DKI Jakarta">
+                                                </div>
+                                                <div class="col-lg-4 mt-4">
+                                                    <label for="alamat">Kode Pos</label>
+                                                    <input type="text" class="form-control no-border" name="alamat"
+                                                        id="alamat" value="13820">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 p-4">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h5 class="m-0 mt-2"><strong>Pengalaman</strong></h5>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="pengalaman-review d-flex mt-4">
+                                                        <div>
+                                                            <img src="img/a4.jpg" class="img-lg rounded mr-lg-4 mb-4" alt="">
+                                                        </div>
+                                                        <div>
+                                                            <h6>Designer</h6>
+                                                            <span class="pengalaman-location">Anggada Duta, PT. Internship
+                                                                Wisesa</span>
+                                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Distinctio maiores eum saepe consectetur pariatur
+                                                                accusamus perferendis asperiores facilis aliquam,
+                                                                voluptatum iste odit nobis dolore possimus amet, totam
+                                                                deserunt veritatis modi officia vitae voluptas,
+                                                                consequatur ducimus corporis quo. Quaerat omnis
+                                                                veritatis facere dolor quod numquam. Necessitatibus quos
+                                                                magni dignissimos accusamus delectus.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="hr-line-solid">
+                                    <div class="form-row">
+                                        <div class="col-12 p-4">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h4 class="m-0 mt-2"><strong>Pendidikan</strong></h4>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 mt-4">
+                                                    <label for="inputState">Tingkat Pendidikan Akhir</label>
+                                                    <select id="inputState" class="form-control">
+                                                        <option>Pilih...</option>
+                                                        <option>SD</option>
+                                                        <option>SMP</option>
+                                                        <option>SMA</option>
+                                                        <option>Diploma</option>
+                                                        <option selected>S1</option>
+                                                        <option>S2</option>
+                                                        <option>S3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="hr-line-solid">
+                                    <div class="form-row">
+                                        <div class="col-12 pl-4 pr-4">
+                                            <h4><strong>Kontak</strong></h4>
+                                        </div>
+                                        <div class="col-lg-6 p-4">
+                                            <label for="email_karyawan">Email Kantor dan Pribadi</label>
+                                            <input type="email" class="form-control no-border" name="email_karyawan"
+                                                id="email_karyawan" placeholder="Email Kantor"
+                                                value="example@adw.co.id">
+                                            <input type="email" class="form-control mt-4 no-border"
+                                                name="email_karyawan" id="email_karyawan" placeholder="Email Pribadi"
+                                                value="example@gmail.com">
+                                        </div>
+                                        <div class="col-lg-6 p-4">
+                                            <label for="phone">No Kontak</label>
+                                            <input type="text" class="form-control no-border" name="phone" id="phone"
+                                                placeholder="No Handphone" value="081716302697">
+                                        </div>
+                                    </div>
+                                    <hr class="hr-line-solid">
+                                    <div class="action clearfix">
+                                        <button class="btn simpan float-right" type="submit">Simpan</button>
+                                        <a href="karyawan.html" class="btn kembali float-right">
+                                            Kembali
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="pill2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4><strong>Lampiran</strong></h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h5><strong>Sertifikat</strong></h5>
+                                        <div class="sertifikat-review d-flex my-4">
+                                            <div>
+                                                <img src="img/a4.jpg" class="img-md mr-lg-4 rounded" alt="">
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <span class="nama-lampiran">Sertifikat</span>
+                                                <a href="" class="ancor-lampiran">Lihat Dokumen</a>
+                                            </div>
+                                        </div>
+                                        <div class="sertifikat-review d-flex my-4">
+                                            <div>
+                                                <img src="img/a4.jpg" class="img-md mr-lg-4 rounded" alt="">
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <span class="nama-lampiran">Sertifikat</span>
+                                                <a href="" class="ancor-lampiran">Lihat Dokumen</a>
+                                            </div>
+                                        </div>
+                                        <div class="sertifikat-review d-flex my-4">
+                                            <div>
+                                                <img src="img/a4.jpg" class="img-md mr-lg-4 rounded" alt="">
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <span class="nama-lampiran">Sertifikat</span>
+                                                <a href="" class="ancor-lampiran">Lihat Dokumen</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h5><strong>Curicullum Vitae</strong></h5>
+                                        <div class="cv-review d-flex my-4">
+                                            <div>
+                                                <img src="img/a4.jpg" class="img-md mr-lg-4 rounded" alt="">
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <span class="nama-lampiran">Curicullum Vitae</span>
+                                                <a href="" class="ancor-lampiran">Lihat Dokumen</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="pill3">
+                            <div class="container">
+                                <div class="form-row">
+                                    <div class="col-12 pl-4 pr-4">
+                                        <h4><strong>Kontrak</strong></h4>
+                                    </div>
+                                    <div class="col-lg-4 p-4">
+                                        <span>Status</span>
+                                        <br>
+                                        <div class="form-check form-check-radio form-check-inline">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1"> Freelance
+                                                <span class="form-check-sign"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-radio form-check-inline">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2"> Kontrak
+                                                <span class="form-check-sign"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 p-4">
+                                        <div class="form-group" id="data_1">
+                                            <label class="font-normal">Start Kontrak</label>
+                                            <div class="input-group date">
+                                                <div class="input-group-prepend ">
+                                                    <span class="input-group-text border-0"
+                                                        style="background-color: #F0F2F8;"><i
+                                                            class="far fa-calendar-alt"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="mm/dd/yyyy"
+                                                    value="12/12/17">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 p-4">
+                                        <label for="tipe">End Kontrak</label>
+                                        <div class="form-group" id="data_1">
+                                            <div class="input-group date">
+                                                <div class="input-group-prepend ">
+                                                    <span class="input-group-text border-0"
+                                                        style="background-color: #F0F2F8;"><i
+                                                            class="far fa-calendar-alt"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="mm/dd/yyyy"
+                                                    value="12/12/22">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <script src="js/bootstrap-table.js"></script>
+    <script src="js/bootstrap-table-export.js"></script>
+    <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+    <script src="js/now-ui-kit.js?v=1.2.2" type="text/javascript"></script>
+
+    <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+    <script>
+        function numberFormatter(value, row, index) {
+            var options = $('#tablekelas').bootstrapTable('getOptions')
+            // alert(options["pageNumber"] + " " + options["pageSize"])
+            //  console.log(options["pageSize"]);
+            var tes = 0
+            if (!isNaN(options['pageSize'])) { //cek pagesize angka atau tidak, klo angka jalankan kode dibawah
+                tes = ((options["pageNumber"] - 1) * options["pageSize"])
+            }
+            return index + 1 + tes;
+        }
+
+        function actionFormatter(value, row, index) {
+            return [
+                '<a href="<?= site_url("Kelas/detail_kelas/") ?>' + value + '" class="btn btn-primary ">Detail</a>',
+                ' ',
+                '<a href="<?= site_url("Kelas/updateform/") ?>' + value + '" class="btn btn-success ">Edit</a>',
+                ' ',
+                '<a href="<?= site_url("Kelas/delete_kelas/") ?>' + value + '" class="btn btn-danger"  >Hapus</a>',
+            ].join('');
+        }
+
+        function detailFormatter(index, row) {
+            var html = []
+            const excludeType = ["Undefined", "object"];
+            $.each(row, function (key, value) {
+                if (!excludeType.includes(typeof value)) {
+                    html.push('<p><b>' + key + ':</b>' + value + '</p>')
+                }
+            })
+            return html.join('')
+        }
+
+        $(document).ready(function () {
+            var table = $('#tablekelas')
+            var $button = $('#button')
+
+            $button.click(function () {
+                alert('Kelasnnya :  ' + JSON.stringify(table.bootstrapTable('getSelections')[0]["nama_kelas"]))
+            })
+        })
+
+        var mem = $('#data_1 .input-group.date').datepicker({
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            calendarWeeks: true,
+            autoclose: true
+        });
+
+        var mem = $('#data_2 .input-group.date').datepicker({
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            calendarWeeks: true,
+            autoclose: true
+        });
+
+        $('.custom-file-input').on('change', function () {
+            let fileName = $(this).val().split('\\').pop();
+            $(this).next('.custom-file-label').addClass("selected").html(fileName);
+        }); 
+    </script>
+
+</body>
+
+</html>
