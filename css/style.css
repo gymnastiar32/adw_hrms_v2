@@ -10119,18 +10119,6 @@ main .middle-box .input-group-text{
     width: 100%;
   }
 }
-/* Track */
-#page-wrapper::-webkit-scrollbar-track {
-  background: #c3c3c3; 
-}
-/* Handle */
-#page-wrapper::-webkit-scrollbar-thumb {
-  background: #8a8a8a; 
-}
-/* Handle on hover */
-#page-wrapper::-webkit-scrollbar-thumb:hover {
-  background: #707070; 
-}
 #wrapper{
   padding-top: 62px;
 }
@@ -10140,25 +10128,19 @@ main .middle-box .input-group-text{
 .navbar-static-side{
   background-color: #005DB5;
   /* overflow: auto; */
-}
-/* width */
-.navbar-static-side::-webkit-scrollbar {
-  width: 10px;
-}
-/* Track */
-.navbar-static-side::-webkit-scrollbar-track {
-  background: #005db5; 
-}
-/* Handle */
-.navbar-static-side::-webkit-scrollbar-thumb {
-  background: #004d96; 
-}
-/* Handle on hover */
-.navbar-static-side::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  border-radius: 0 30px 0 0;
 }
 .nav > li.active {
   background-color: #004F99;
+}
+.metismenu > li:first-child{
+  border-radius: 0 30px 0 0;
+}
+body.mini-navbar .navbar-default .nav > li.active:first-child{
+  border-radius: 0;
+}
+.metismenu > li:first-child > a{
+  border-radius: 0 30px 0 0;
 }
 .mini-navbar .nav .nav-second-level{
   background-color: #005db5;
@@ -10198,6 +10180,11 @@ main .middle-box .input-group-text{
 .navbar-brand{
   margin-left: 1rem;
   width: calc(220px - 32px);
+}
+@media(max-width:991px){
+  .navbar-brand{
+    display: none !important;
+  }
 }
 .navbar-minimalize {
   display: block;

@@ -15,8 +15,6 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/now-ui-kit.css">
     <link href="css/bootstrap-table.css" rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -27,7 +25,8 @@
                 <span style="color: #005eb596; font-weight:700; font-size:36px;">HRMS</span>
             </div>
             <div class="navbar-header d-flex align-items-center">
-                <a class="navbar-minimalize minimalize-styl-2 btn btn-info" href="#"><i class="fa fa-bars"></i> </a>
+                <a class="navbar-minimalize minimalize-styl-2 btn btn-link" href="#"><i class="fa fa-bars"
+                        style="font-size: 20px;"></i> </a>
 
             </div>
         </div>
@@ -258,30 +257,81 @@
                         <br /><a href="index.html" class="btn btn-primary m-t">Dashboard</a>
                     </div>
                 </div>
-                <div class="middle-box text-center white-bg animated fadeInRightBig">
-                    <h3 class="font-bold">This is page content</h3>
-                    <div class="error-desc">
-                        You can create here any grid layout you want. And any variation layout you imagine:) Check out
-                        main dashboard and other site. It use many different layout.
-                        <br /><a href="index.html" class="btn btn-primary m-t">Dashboard</a>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <h5>Custom responsive table </h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#" class="dropdown-item">Config option 1</a>
+                                        </li>
+                                        <li><a href="#" class="dropdown-item">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                
+                            
+                <div id="toolbar">
+                    <div class="add d-flex align-items-center">
+                        <a href="divisi_add.html" class="d-flex align-items-center">
+                            <div
+                                class="add-btn rounded-circle inline-block d-flex justify-content-center align-items-center">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <span>Tambah Data</span>
+                        </a>
                     </div>
                 </div>
-                <div class="middle-box text-center white-bg animated fadeInRightBig">
-                    <h3 class="font-bold">This is page content</h3>
-                    <div class="error-desc">
-                        You can create here any grid layout you want. And any variation layout you imagine:) Check out
-                        main dashboard and other site. It use many different layout.
-                        <br /><a href="index.html" class="btn btn-primary m-t">Dashboard</a>
+                <table class="table border-0 mt-4 mb-4" id="tablekelas" data-toggle="table" data-search="true"
+                    data-show-refresh="true" data-pagination="true" data-page-size="5" data-page-list="[5,10, All]"
+                    data-show-toggle="true" data-side-pagination="client" data-resizable="false" data-show-export="true"
+                    data-export-types="['pdf', 'csv', 'excel']" data-export-options='{"fileName": "data_kelas"}'
+                    data-click-to-select="true" data-toolbar="#toolbar" data-show-columns="true"
+                    data-show-pagination-switch="true">
+                    <thead>
+                        <tr>
+                            <th data-field="kode_divisi">Kode</th>
+                            <th data-field="nama_divisi">Nama</th>
+                            <th data-field="kantor_divisi">Kantor</th>
+                            <th data-field="tipe_divisi">Tipe</th>
+                            <th data-field="status_divisi">Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LTA28</td>
+                            <td>example1</td>
+                            <td>Kantor Pusat</td>
+                            <td>Divisi/Departement</td>
+                            <td>Aktif</td>
+                            <td>
+                                <a class="badge" href="divisi_edit.html">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                            </div>
+                        </div>
                     </div>
+    
                 </div>
-                <div class="middle-box text-center white-bg animated fadeInRightBig">
-                    <h3 class="font-bold">This is page content</h3>
-                    <div class="error-desc">
-                        You can create here any grid layout you want. And any variation layout you imagine:) Check out
-                        main dashboard and other site. It use many different layout.
-                        <br /><a href="index.html" class="btn btn-primary m-t">Dashboard</a>
-                    </div>
-                </div>
+
             </div>
         </div>
         <!-- <div class="footer">
