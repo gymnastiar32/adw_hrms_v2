@@ -15,35 +15,22 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/now-ui-kit.css">
 	<link href="css/bootstrap-table.css" rel="stylesheet">
-	<link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+	<link href="css/plugins/bootstrap-datepicker/bootstrap-datepicker.css" rel="stylesheet">
 
 </head>
 
 <body>
-	
+
 	<div class="d-flex">
 		<nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
 			<div class="d-flex">
 				<div class="navbar-brand d-flex align-items-center justify-content-center">
 					<span style="color: #005eb596; font-weight:700; font-size:36px;">HRMS</span>
 				</div>
-				<div class="navbar-header d-flex align-items-center ">
-					<ul class="nav navbar-mainmenu">
-						<li class="mr-1"><a class="active" href="karyawan.html">Talent</a></li>
-						<li class="mr-1"><a href="form_cuti.html">Pengajuan Cuti</a></li>
-						<li class="mr-1"><a href="master_asset.html">Asset</a></li>
-						<li class="mr-1"><a href="ekpi_master">e-KPI</a></li>
-						<li><a href="posisi.html">Master Data</a></li>
-					</ul>
-					<!-- class="search-form">
-                        <div class="form-group input-group no-border flex-nowrap">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-search"
-                                        style="color: #878F92 ;"></i></span>
-                            </div>
-                            <input type="text" class="form-control " placeholder="Search...">
-                        </div>
-                    </!-->
+				<div class="navbar-header d-flex align-items-center">
+					<a class="navbar-minimalize minimalize-styl-2 btn btn-link" href="#"><i class="fa fa-bars"
+							style="font-size: 20px;"></i> </a>
+
 				</div>
 			</div>
 			<ul class="nav navbar-top-links navbar-right d-flex align-items-center flex-nowrap">
@@ -124,7 +111,12 @@
 						</li>
 					</ul>
 				</li>
-				<li class="dropdown">
+				<li>
+					<a href="login.html" class="logout-btn btn btn-link border">
+						<i class="fa fa-sign-out-alt"></i> Logout
+					</a>
+				</li>
+				<!-- <li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 						<img class="cog-icon" src="img/cog.svg" alt="cog-icon">
 					</a>
@@ -137,8 +129,8 @@
 							<a class="dropdown-item" href="login.html"><strong>Log Out</strong></a>
 						</li>
 					</ul>
-				</li>
-				<li class="dropdown profile d-flex flex-column">
+				</li> -->
+				<!-- <li class="dropdown profile d-flex flex-column">
 					<button class="btn-link d-flex align-items-center justify-content-between dropdown-toggle"
 						id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<span class="fas fa-chevron-down"></span>
@@ -176,7 +168,7 @@
 							</div>
 						</li>
 					</ul>
-				</li>
+				</li> -->
 			</ul>
 
 		</nav>
@@ -185,329 +177,397 @@
 		<nav class="navbar-default navbar-static-side" role="navigation">
 			<div class="sidebar-collapse d-flex flex-column">
 				<ul class="nav metismenu" id="side-menu">
-					<li>
-						<h2>Talent</h2>
-					</li>
-					<li class="nav-link">
-						<a class="active" href="#"><span class="nav-label">Karyawan</span></a>
-					</li>
-					<li class="nav-link">
-						<a href="#"><span class="nav-label">Calon Karyawan</span></a>
-					</li>
-					<li class="nav-link">
-						<a href="#"><span class="nav-label">Pengajuan Training</span></a>
-					</li>
-				</ul>
-				<ul class="nav metismenu">
-					<li class="nav-link">
-						<a href="login.html">
-							<img class="logout-icon" src="img/logout.svg" alt="">
-							<span class="logout">Log Out</span>
-						</a>
-					</li>
+					<li class="nav-header">
+						<div class="dropdown profile-element">
+							<img alt="image" class="rounded" src="img/profile_small.jpg" />
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<span class="block m-t-xs font-bold">David Williams <i
+										class="fa fa-chevron-down"></i></span>
 
+							</a>
+							<div class="privilage">
+								<span class="block">1 - Kantor Pusat</span>
+								<span class="block">22 - TEKNOLOGI INFORMASI</span>
+								<span class="block">1 - ADMINISTRATOR APPLICATION</span>
+							</div>
+							<a class="btn btn-link" href="">
+								<i class="fa fa-cog"></i>
+								Pengaturan Akun
+							</a>
+							<ul class="dropdown-menu m-t-xs">
+								<li><a class="dropdown-item" href="profile.html">Profile</a></li>
+								<li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+								<li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
+								<li class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="login.html">Logout</a></li>
+							</ul>
+						</div>
+						<div class="logo-element">
+							HRMS
+						</div>
+					</li>
+					<li>
+						<a href="index.html"><i class="fa fa-user"></i> <span class="nav-label">Talent</span>
+							<span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li><a href="index.html">Karyawan</a></li>
+							<li><a href="dashboard_2.html">Calon Karyawan</a></li>
+							<li><a href="dashboard_3.html">Pengajuan Training</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="index.html"><i class="fas fa-calendar-alt"></i> <span class="nav-label">Pengajuan
+								Cuti</span>
+							<span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li><a href="index.html">Karyawan</a></li>
+							<li><a href="dashboard_2.html">Calon Karyawan</a></li>
+							<li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="index.html"><i class="fa fa-file-alt"></i> <span class="nav-label">Asset</span>
+							<span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li><a href="index.html">Karyawan</a></li>
+							<li><a href="dashboard_2.html">Calon Karyawan</a></li>
+							<li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="index.html"><i class="fa fa-project-diagram"></i> <span class="nav-label">e-KPI</span>
+							<span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li><a href="index.html">Karyawan</a></li>
+							<li><a href="dashboard_2.html">Calon Karyawan</a></li>
+							<li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="index.html"><i class="fa fa-database"></i> <span class="nav-label">Master Data</span>
+							<span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse">
+							<li><a href="index.html">Posisi</a></li>
+							<li><a href="dashboard_2.html">Job Title</a></li>
+							<li><a href="dashboard_3.html">Divisi/Departemen</a></li>
+							<li><a href="dashboard_3.html">Template Email</a></li>
+							<li><a href="dashboard_3.html">Tingkat Pendidikan Terakhir</a></li>
+							<li><a href="dashboard_3.html">Domisili</a></li>
+							<li><a href="dashboard_3.html">Hirarki</a></li>
+							<li><a href="dashboard_3.html">Proyek</a></li>
+							<li><a href="dashboard_3.html">Menu Management</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</nav>
-		<div id="page-wrapper">
-			<div class="wrapper border-bottom white-bg page-heading p-0 pb-4">
-				<div class="col-12 p-0">
-					<h2>Karyawan</h2>
-					<ol class="breadcrumb">
-						<li class="breadcrumb-item">
-							<a href="#">Talent</a>
-						</li>
-						<li class="breadcrumb-item active">
-							<strong>Karyawan</strong>
-						</li>
-					</ol>
+		<div id="page-wrapper" class="gray-bg">
+			<div class="wrapper border-bottom white-bg page-heading" style="margin-bottom: 25px;">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Tambah Karyawan</h2>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item">
+								<a>Talent</a>
+							</li>
+							<li class="breadcrumb-item">
+								<a href="karyawan.html">Karyawan</a>
+							</li>
+							<li class="breadcrumb-item active">
+								<strong>Tambah Karyawan</strong>
+							</li>
+						</ol>
+					</div>
 				</div>
 			</div>
 			<div class="wrapper wrapper-content animated fadeInRightBig">
-				<div class="middle-box editPage">
-					<h3 class="border-bottom">Tambah Data Karyawan</h3>
-					<form>
-						<div class="form-row">
-							<div class="col-12 pl-4 pr-4">
-								<h4><strong>Identitas</strong></h4>
-							</div>
-							<div class="col-lg-6 p-4">
-								<label for="nama">Nama Karyawan</label>
-								<input type="text" class="form-control no-border" name="nama" id="nama">
-							</div>
-							<div class="col-lg-6 p-4">
-								<label for="nik">NIK</label>
-								<input type="text" class="form-control no-border" name="nik" id="nik">
-							</div>
-						</div>
-						<hr class="hr-line-solid">
-						<div class="form-row">
-							<div class="col-12 p-4">
-								<div class="row">
-									<div class="col-12">
-										<h4><strong>Data Diri</strong></h4>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-12">
-										<h5 class="m-0 mt-4"><strong>Alamat</strong></h5>
-									</div>
-									<div class="col-lg-12 mt-4">
-										<label for="alamat">Alamat Karyawan</label>
-										<input type="text" class="form-control no-border" name="alamat" id="alamat">
-									</div>
-									<div class="col-lg-4 mt-4">
-										<label for="alamat">Kota/Kabupaten</label>
-										<input type="text" class="form-control no-border" name="alamat" id="alamat">
-									</div>
-									<div class="col-lg-4 mt-4">
-										<label for="alamat">Provinsi</label>
-										<input type="text" class="form-control no-border" name="alamat" id="alamat">
-									</div>
-									<div class="col-lg-4 mt-4">
-										<label for="alamat">Kode Pos</label>
-										<input type="text" class="form-control no-border" name="alamat" id="alamat">
-									</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="ibox ">
+							<div class="ibox-title">
+								<h5><strong>Tambah Data Karyawan</strong></h5>
+								<div class="ibox-tools">
+									<a class="collapse-link">
+										<i class="fa fa-chevron-up"></i>
+									</a>
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+										<i class="fa fa-wrench"></i>
+									</a>
+									<ul class="dropdown-menu dropdown-user">
+										<li><a href="#" class="dropdown-item">Config option 1</a>
+										</li>
+										<li><a href="#" class="dropdown-item">Config option 2</a>
+										</li>
+									</ul>
+									<a class="close-link">
+										<i class="fa fa-times"></i>
+									</a>
 								</div>
 							</div>
-							<div class="col-12 p-4">
-								<div class="row">
-									<div class="col-12">
-										<h5 class="m-0 mt-2"><strong>Pengalaman</strong></h5>
+							<div class="ibox-content addPage">
+								<form action="">
+									<div class="form-group row">
+										<div class="col-lg-3">
+											<label for="nama_depan"><strong> Nama Depan</strong></label>
+											<input type="text" name="nama_depan" id="nama_depan" class="form-control"
+												placeholder="Masukkan Nama Depan">
+										</div>
+										<div class="col-lg-3">
+											<label for="nama_belakang" class="mt-3 mt-lg-0"><strong> Nama
+													Belakang</strong></label>
+											<input type="text" name="nama_belakang" id="nama_belakang"
+												class="form-control" placeholder="Masukkan Nama Belakang">
+										</div>
+										<div class="col-lg-3">
+											<label for="nik" class="mt-3 mt-lg-0"><strong> NIK</strong></label>
+											<input type="text" name="nik" id="nik" class="form-control"
+												placeholder="Masukkan NIK">
+										</div>
 									</div>
-								</div>
-								<div class="row" id="pengalaman">
-									<div class="col-lg-11">
+									<div class="form-group row mt-4">
+										<div class="col-lg-6">
+											<label for="alamat" class="mt-3 mt-lg-0"><strong> Alamat</strong></label>
+											<input type="text" name="alamat" id="alamat" class="form-control"
+												placeholder="Masukkan Alamat">
+										</div>
+										<div class="col-lg-3">
+											<label for="kota" class="mt-3 mt-lg-0"><strong> Kota</strong></label>
+											<select name="kota" id="kota" class="form-control">
+												<option disabled selected>Pilih Kota</option>
+												<option value="Kota1">Kota1</option>
+												<option value="Kota2">Kota2</option>
+												<option value="Kota3">Kota3</option>
+												<option value="Kota4">Kota4</option>
+												<option value="Kota5">Kota5</option>
+											</select>
+										</div>
+										<div class="col-lg-3">
+											<label for="provinsi" class="mt-3 mt-lg-0"><strong>
+													Provinsi</strong></label>
+											<select name="provinsi" id="provinsi" class="form-control">
+												<option disabled selected>Pilih Kota</option>
+												<option value="Provinsi1">Provinsi1</option>
+												<option value="Provinsi2">Provinsi2</option>
+												<option value="Provinsi3">Provinsi3</option>
+												<option value="Provinsi4">Provinsi4</option>
+												<option value="Provinsi5">Provinsi5</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group mt-4">
+										<label for=""><strong>Curicullum Vitae</strong></label>
 										<div class="row">
-											<div class="col-lg-6 mt-4">
-												<label for="alamat">Judul</label>
-												<input type="text" class="form-control no-border" name="alamat"
-													id="alamat">
-											</div>
-											<div class="col-lg-3 mt-4">
-												<div class="form-group" id="data_1">
-													<label class="font-normal">Start Date</label>
-													<div class="input-group date">
-														<div class="input-group-prepend ">
-															<span class="input-group-text border-0"
-																style="background-color: #F0F2F8;"><i
-																	class="far fa-calendar-alt"></i></span>
+											<div class="col-sm-12">
+												<div class="container">
+													<div class="row input-file">
+														<div class="col-lg-3">
+															<input type="text" name="judul_cv" id="judul_cv"
+																class="form-control" placeholder="Masukkan Judul CV">
 														</div>
-														<input type="text" class="form-control" placeholder="mm/dd/yy">
+														<div class="col-lg-6 mt-3 mt-lg-0">
+															<input type="text" name="deskripsi_dv" id="deskripsi_dv"
+																class="form-control"
+																placeholder="Masukkan Deskripsi CV">
+														</div>
+														<div class="col-lg-3 mt-3 mt-lg-0">
+															<!-- <a class="add-form-btn btn btn-link">
+																<i class="fa fa-paperclip"></i>
+																Masukkan File
+															</a> -->
+															<input type="file" class="form-control" id="file_cv"
+																name="file_cv" accept="image/png, image/jpeg">
+														</div>
 													</div>
 												</div>
 											</div>
-											<div class="col-lg-3 mt-4">
-												<div class="form-group" id="data_1">
-													<label class="font-normal">End Date</label>
-													<div class="input-group date">
-														<div class="input-group-prepend ">
-															<span class="input-group-text border-0"
-																style="background-color: #F0F2F8; width: 37px;"></span>
+										</div>
+									</div>
+									<div class="form-group mt-4">
+										<label for=""><strong>Pengalaman</strong></label>
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="container">
+													<div class="row input-file">
+														<div class="col-lg-3">
+															<input type="text" name="judul_pengalaman"
+																id="judul_pengalaman" class="form-control"
+																placeholder="Judul">
 														</div>
-														<input type="text" class="form-control" placeholder="mm/dd/yy">
+														<div class="col-lg-3 mt-3 mt-lg-0">
+															<input type="text" name="perusahaan_pengalaman"
+																id="perusahaan_pengalaman" class="form-control"
+																placeholder="Prusahaan">
+														</div>
+														<div class="col-lg-3 mt-3 mt-lg-0" style="height:32px;">
+															<div class="input-group date" data-provide="datepicker">
+																<input type="text" class="form-control" linked="true"
+																	placeholder="Tanggal Mulai">
+																<div class="input-group-addon">
+																	<i class="far fa-calendar-alt"></i>
+																</div>
+															</div>
+														</div>
+														<div class="col-lg-3 mt-3 mt-lg-0" style="height:32px;">
+															<div class="input-group date" data-provide="datepicker">
+																<input type="text" class="form-control" linked="true"
+																	placeholder="Tanggal Akhir">
+																<div class="input-group-addon">
+																	<i class="far fa-calendar-alt"></i>
+																</div>
+															</div>
+														</div>
+														<div class="col-lg-3 mt-3">
+															<select name="status_pengalaman" class="form-control"
+																id="status_pengalaman">
+																<option selected disabled>Status</option>
+																<option value="Opsi1">Opsi1</option>
+																<option value="Opsi2">Opsi2</option>
+															</select>
+														</div>
+														<div class="col-lg-9 mt-3">
+															<input type="text" name="deskripsi_pengalaman"
+																id="deskripsi_pengalaman" class="form-control"
+																placeholder="Deskripsi">
+														</div>
 													</div>
 												</div>
 											</div>
-											<div class="col-12 mt-4">
-												<label for="">Deskripsi</label>
-												<textarea name="desk-pengalaman" id="desk-pengalaman"
-													class="textarea-form"></textarea>
+										</div>
+										<div class="row">
+											<div class="col-sm-3">
+												<a class="add-form-btn btn btn-link mt-3">
+													<span class="badge add-btn">
+														<i class="fa fa-plus"></i>
+													</span>
+													<strong>Tambah Kolom Sertifikat</strong>
+												</a>
+											</div>
+											<div class="col-sm-3">
+												<a class="add-form-btn btn btn-link mt-3">
+													<span class="badge delete-btn">
+														<i class="fa fa-times"></i>
+													</span>
+													<strong>Tambah Kolom Sertifikat</strong>
+												</a>
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-1 pt-lg-1">
-										<a class="remove-form-btn mt-lg-5 mt-3">
-											<span class="d-flex align-items-center justify-content-center">
-												<i class="fa fa-times"></i>
-											</span>
-										</a>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-12 mt-5">
-										<a class="add-form-btn d-flex align-items-center">
-											<span
-												class="rounded-circle d-flex justify-content-center align-items-center">
-												<i class="fas fa-plus"></i>
-											</span>
-											&emsp14;
-											Tambah Form
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<hr class="hr-line-solid">
-						<div class="form-row">
-							<div class="col-12 p-4">
-								<div class="row">
-									<div class="col-12">
-										<h4 class="m-0 mt-2"><strong>Pendidikan</strong></h4>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-6 mt-4">
-										<label for="inputState">Tingkat Pendidikan Akhir</label>
-										<select id="inputState" class="form-control">
-											<option selected>Pilih...</option>
-											<option>SD</option>
-											<option>SMP</option>
-											<option>SMA</option>
-											<option>Diploma</option>
-											<option>S1</option>
-											<option>S2</option>
-											<option>S3</option>
-										</select>
-									</div>
-								</div>
-							</div>
-						</div>
-						<hr class="hr-line-solid">
-						<div class="form-row">
-							<div class="col-12 pl-4 pr-4">
-								<h4><strong>Kontak</strong></h4>
-							</div>
-							<!-- <div class="col-md-6 p-4">
-                                <label for="pengalaman">Pengalaman</label>
-                                <textarea class="textarea-form" name="" id="" rows="5"></textarea>
-                            </div> -->
-							<div class="col-lg-6 p-4">
-								<label for="email_karyawan">Email Kantor dan Pribadi</label>
-								<input type="email" class="form-control no-border" name="email_karyawan"
-									id="email_karyawan" placeholder="Email Kantor">
-								<input type="email" class="form-control mt-4 no-border" name="email_karyawan"
-									id="email_karyawan" placeholder="Email Pribadi">
-							</div>
-							<div class="col-lg-6 p-4">
-								<label for="phone">No Kontak</label>
-								<input type="text" class="form-control no-border" name="phone" id="phone"
-									placeholder="No Handphone">
-							</div>
-						</div>
-						<hr class="hr-line-solid">
-						<div class="form-row">
-							<div class="col-12 pl-4 pr-4">
-								<div class="row">
-									<div class="col-12">
-										<h4><strong>Lampiran</strong></h4>
-									</div>
-								</div>
-								<div class="row" id="sertifikat">
-									<div class="col-lg-6">
-										<label for="tipe">Sertifikat</label>
+									<div class="form-group mt-4">
+										<label for=""><strong>Sertifikat</strong></label>
 										<div class="row">
-											<div class="col-lg-6">
-												<input type="text" class="form-control no-border mb-4" name="tipe"
-													id="tipe" value="">
+											<div class="col-sm-12">
+												<div class="container">
+													<div class="row input-file">
+														<div class="col-lg-3">
+															<input type="text" name="judul_pengalaman"
+																id="judul_pengalaman" class="form-control"
+																placeholder="Judul">
+														</div>
+														<div class="col-lg-3 mt-3 mt-lg-0" style="height:32px;">
+															<div class="input-group date" data-provide="datepicker">
+																<input type="text" class="form-control" linked="true"
+																	placeholder="Tanggal Rilis">
+																<div class="input-group-addon">
+																	<i class="far fa-calendar-alt"></i>
+																</div>
+															</div>
+														</div>
+														<div class="col-lg-3 mt-3 mt-lg-0" style="height:32px;">
+															<div class="input-group date" data-provide="datepicker">
+																<input type="text" class="form-control" linked="true"
+																	placeholder="Tanggal Habis Tempo">
+																<div class="input-group-addon">
+																	<i class="far fa-calendar-alt"></i>
+																</div>
+															</div>
+														</div>
+														<div class="col-lg-3 mt-3 mt-lg-0">
+															<!-- <a class="add-form-btn btn btn-link">
+																<i class="fa fa-paperclip"></i>
+																Masukkan File
+															</a> -->
+															<input type="file" class="form-control" id="file_cv"
+																name="file_cv" accept="image/png, image/jpeg">
+														</div>
+														<div class="col-lg-3 mt-3">
+															<input type="text" name="judul_pengalaman"
+																id="judul_pengalaman" class="form-control"
+																placeholder="Credential ID">
+														</div>
+														<div class="col-lg-3 mt-3">
+															<input type="text" name="judul_pengalaman"
+																id="judul_pengalaman" class="form-control"
+																placeholder="Credential URL">
+														</div>
+														<div class="col-lg-6 mt-3">
+															<input type="text" name="deskripsi_pengalaman"
+																id="deskripsi_pengalaman" class="form-control"
+																placeholder="Deskripsi">
+														</div>
+													</div>
+												</div>
 											</div>
-											<div class="col-lg-6">
-												<div class="custom-file">
-													<input id="logo" type="file" class="custom-file-input">
-													<label for="logo" class="custom-file-label b-r-xl">Pilih
-														File</label>
+										</div>
+										<div class="row">
+											<div class="col-sm-3">
+												<a class="add-form-btn btn btn-link mt-3">
+													<span class="badge add-btn">
+														<i class="fa fa-plus"></i>
+													</span>
+													<strong>Tambah Kolom Sertifikat</strong>
+												</a>
+											</div>
+											<div class="col-sm-3">
+												<a class="add-form-btn btn btn-link mt-3">
+													<span class="badge delete-btn">
+														<i class="fa fa-times"></i>
+													</span>
+													<strong>Tambah Kolom Sertifikat</strong>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="form-group row mt-4">
+										<div class="col-lg-3">
+											<select name="" id="" class="form-control">
+												<option disabled selected>Status</option>
+												<option value="Opsi1">Opsi1</option>
+												<option value="Opsi2">Opsi2</option>
+											</select>
+										</div>
+										<div class="col-lg-3 mt-3 mt-lg-0" style="height:32px;">
+											<div class="input-group date" data-provide="datepicker">
+												<input type="text" class="form-control" linked="true"
+													placeholder="Tanggal Rilis">
+												<div class="input-group-addon">
+													<i class="far fa-calendar-alt"></i>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3 mt-3 mt-lg-0" style="height:32px;">
+											<div class="input-group date" data-provide="datepicker">
+												<input type="text" class="form-control" linked="true"
+													placeholder="Tanggal Habis Tempo">
+												<div class="input-group-addon">
+													<i class="far fa-calendar-alt"></i>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-1 pt-lg-1">
-										<a class="remove-form-btn mt-4">
-											<span class="d-flex align-items-center justify-content-center">
-												<i class="fa fa-times"></i>
-											</span>
+									<hr class="hr-line-solid">
+									<div class="action clearfix">
+										<button class="btn simpan float-right" type="submit">Simpan</button>
+										<a href="karyawan.html" class="btn kembali float-right">
+											Kembali
 										</a>
 									</div>
-								</div>
-								<div class="row">
-									<div class="col-12">
-										<a class="add-form-btn  mt-lg-4 mt-5 d-flex align-items-center">
-											<span
-												class="rounded-circle d-flex justify-content-center align-items-center">
-												<i class="fas fa-plus"></i>
-											</span>
-											&emsp14;
-											Tambah Form
-										</a>
-									</div>
-								</div>
-								<div class="row mt-lg-0 mt-4">
-									<div class="col-6 p-4">
-										<label for="kantor">CV</label>
-										<div class="row">
-											<div class="col-lg-6">
-												<input type="text" class="form-control no-border mb-4" name="tipe"
-													id="tipe" value="">
-											</div>
-											<div class="col-lg-6">
-												<div class="custom-file">
-													<input id="cv" type="file" class="custom-file-input">
-													<label for="cv" class="custom-file-label b-r-xl">Pilih File</label>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+								</form>
 							</div>
 						</div>
-						<hr class="hr-line-solid">
-						<div class="form-row">
-							<div class="col-12 pl-4 pr-4">
-								<h4><strong>Kontrak</strong></h4>
-							</div>
-							<div class="col-lg-4 p-4">
-								<span>Status</span>
-								<br>
-								<div class="form-check form-check-radio form-check-inline">
-									<label class="form-check-label">
-										<input class="form-check-input" type="radio" name="inlineRadioOptions"
-											id="inlineRadio1" value="option1"> Freelance
-										<span class="form-check-sign"></span>
-									</label>
-								</div>
-								<div class="form-check form-check-radio form-check-inline">
-									<label class="form-check-label">
-										<input class="form-check-input" type="radio" name="inlineRadioOptions"
-											id="inlineRadio2" value="option2"> Kontrak
-										<span class="form-check-sign"></span>
-									</label>
-								</div>
-							</div>
-							<div class="col-lg-4 p-4">
-								<div class="form-group" id="data_1">
-									<label class="font-normal">Start Kontrak</label>
-									<div class="input-group date">
-										<div class="input-group-prepend ">
-											<span class="input-group-text border-0"
-												style="background-color: #F0F2F8;"><i
-													class="far fa-calendar-alt"></i></span>
-										</div>
-										<input type="text" class="form-control" placeholder="mm/dd/yy">
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 p-4">
-								<label for="tipe">End Kontrak</label>
-								<div class="form-group" id="data_1">
-									<div class="input-group date">
-										<div class="input-group-prepend ">
-											<span class="input-group-text border-0"
-												style="background-color: #F0F2F8;"><i
-													class="far fa-calendar-alt"></i></span>
-										</div>
-										<input type="text" class="form-control" placeholder="mm/dd/yy">
-									</div>
-								</div>
-							</div>
-						</div>
-						<hr class="hr-line-solid">
-						<div class="action clearfix">
-							<button class="btn simpan float-right" type="submit">Simpan</button>
-							<a href="karyawan.html" class="btn kembali float-right">
-								Kembali
-							</a>
-						</div>
-					</form>
+					</div>
+
 				</div>
+
 			</div>
 		</div>
 	</div>
@@ -526,89 +586,18 @@
 
 	<script src="js/bootstrap-table.js"></script>
 	<script src="js/bootstrap-table-export.js"></script>
+
+	<script src="js/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
 	<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
 	<script src="js/now-ui-kit.js?v=1.2.2" type="text/javascript"></script>
 
 	<script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
 
 	<script>
-		function numberFormatter(value, row, index) {
-			var options = $('#tablekelas').bootstrapTable('getOptions')
-			// alert(options["pageNumber"] + " " + options["pageSize"])
-			//  console.log(options["pageSize"]);
-			var tes = 0
-			if (!isNaN(options['pageSize'])) { //cek pagesize angka atau tidak, klo angka jalankan kode dibawah
-				tes = ((options["pageNumber"] - 1) * options["pageSize"])
-			}
-			return index + 1 + tes;
-		}
-
-		function actionFormatter(value, row, index) {
-			return [
-				'<a href="<?= site_url("Kelas/detail_kelas/") ?>' + value + '" class="btn btn-primary ">Detail</a>',
-				' ',
-				'<a href="<?= site_url("Kelas/updateform/") ?>' + value + '" class="btn btn-success ">Edit</a>',
-				' ',
-				'<a href="<?= site_url("Kelas/delete_kelas/") ?>' + value + '" class="btn btn-danger"  >Hapus</a>',
-			].join('');
-		}
-
-		function detailFormatter(index, row) {
-			var html = []
-			const excludeType = ["Undefined", "object"];
-			$.each(row, function (key, value) {
-				if (!excludeType.includes(typeof value)) {
-					html.push('<p><b>' + key + ':</b>' + value + '</p>')
-				}
-			})
-			return html.join('')
-		}
-
-		$(document).ready(function () {
-			var table = $('#tablekelas')
-			var $button = $('#button')
-
-			$button.click(function () {
-				alert('Kelasnnya :  ' + JSON.stringify(table.bootstrapTable('getSelections')[0]["nama_kelas"]))
-			})
-		})
-
-		var mem = $('#data_1 .input-group.date').datepicker({
-			todayBtn: "linked",
-			keyboardNavigation: false,
-			forceParse: false,
-			calendarWeeks: true,
-			autoclose: true
+		$('.date input').datepicker({
+			todayHighlight: true,
+			linked: true
 		});
-
-		var mem = $('#data_2 .input-group.date').datepicker({
-			todayBtn: "linked",
-			keyboardNavigation: false,
-			forceParse: false,
-			calendarWeeks: true,
-			autoclose: true
-		});
-
-		var mem = $('#data_3 .input-group.date').datepicker({
-			todayBtn: "linked",
-			keyboardNavigation: false,
-			forceParse: false,
-			calendarWeeks: true,
-			autoclose: true
-		});
-
-		var mem = $('#data_4 .input-group.date').datepicker({
-			todayBtn: "linked",
-			keyboardNavigation: false,
-			forceParse: false,
-			calendarWeeks: true,
-			autoclose: true
-		});
-
-		$('.custom-file-input').on('change', function () {
-			let fileName = $(this).val().split('\\').pop();
-			$(this).next('.custom-file-label').addClass("selected").html(fileName);
-		}); 
 	</script>
 
 </body>

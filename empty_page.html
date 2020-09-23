@@ -108,7 +108,12 @@
                     </li>
                 </ul>
             </li>
-            <li class="dropdown">
+            <li>
+                <a href="login.html" class="logout-btn btn btn-link border">
+                    <i class="fa fa-sign-out-alt"></i> Logout
+                </a>
+            </li>
+            <!-- <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     <img class="cog-icon" src="img/cog.svg" alt="cog-icon">
                 </a>
@@ -121,8 +126,8 @@
                         <a class="dropdown-item" href="login.html"><strong>Log Out</strong></a>
                     </li>
                 </ul>
-            </li>
-            <li class="dropdown profile d-flex flex-column">
+            </li> -->
+            <!-- <li class="dropdown profile d-flex flex-column">
                 <button class="btn-link d-flex align-items-center justify-content-between dropdown-toggle"
                     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="fas fa-chevron-down"></span>
@@ -160,7 +165,7 @@
                         </div>
                     </li>
                 </ul>
-            </li>
+            </li> -->
         </ul>
 
     </nav>
@@ -168,6 +173,35 @@
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse d-flex flex-column">
                 <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="image" class="rounded" src="img/profile_small.jpg" />
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block m-t-xs font-bold">David Williams <i
+                                        class="fa fa-chevron-down"></i></span>
+                               
+                            </a>
+                            <div class="privilage">
+                                <span class="block">1 - Kantor Pusat</span>
+                                <span class="block">22 - TEKNOLOGI INFORMASI</span>
+                                <span class="block">1 - ADMINISTRATOR APPLICATION</span>
+                            </div>
+                            <a class="btn btn-link" href="">
+                                <i class="fa fa-cog"></i>
+                                Pengaturan Akun
+                            </a>
+                            <ul class="dropdown-menu m-t-xs">
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+                                <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            HRMS
+                        </div>
+                    </li>
                     <li>
                         <a href="index.html"><i class="fa fa-user"></i> <span class="nav-label">Talent</span>
                             <span class="fa arrow"></span></a>
@@ -221,15 +255,6 @@
                         </ul>
                     </li>
                 </ul>
-                <ul class="nav metismenu">
-                    <li class="nav-link">
-                        <a href="login.html">
-                            <img class="logout-icon" src="img/logout.svg" alt="">
-                            <span class="logout">Log Out</span>
-                        </a>
-                    </li>
-
-                </ul>
             </div>
         </nav>
         <div id="page-wrapper" class="gray-bg">
@@ -261,7 +286,7 @@
                     <div class="col-lg-12">
                         <div class="ibox ">
                             <div class="ibox-title">
-                                <h5>Custom responsive table </h5>
+                                <h5><strong>Tabel Data Karyawan</strong></h5>
                                 <div class="ibox-tools">
                                     <a class="collapse-link">
                                         <i class="fa fa-chevron-up"></i>
@@ -281,67 +306,69 @@
                                 </div>
                             </div>
                             <div class="ibox-content">
-                                
-                            
-                <div id="toolbar">
-                    <div class="add d-flex align-items-center">
-                        <a href="divisi_add.html" class="d-flex align-items-center">
-                            <div
-                                class="add-btn rounded-circle inline-block d-flex justify-content-center align-items-center">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <span>Tambah Data</span>
-                        </a>
-                    </div>
-                </div>
-                <table class="table border-0 mt-4 mb-4" id="tablekelas" data-toggle="table" data-search="true"
-                    data-show-refresh="true" data-pagination="true" data-page-size="5" data-page-list="[5,10, All]"
-                    data-show-toggle="true" data-side-pagination="client" data-resizable="false" data-show-export="true"
-                    data-export-types="['pdf', 'csv', 'excel']" data-export-options='{"fileName": "data_kelas"}'
-                    data-click-to-select="true" data-toolbar="#toolbar" data-show-columns="true"
-                    data-show-pagination-switch="true">
-                    <thead>
-                        <tr>
-                            <th data-field="kode_divisi">Kode</th>
-                            <th data-field="nama_divisi">Nama</th>
-                            <th data-field="kantor_divisi">Kantor</th>
-                            <th data-field="tipe_divisi">Tipe</th>
-                            <th data-field="status_divisi">Status</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>LTA28</td>
-                            <td>example1</td>
-                            <td>Kantor Pusat</td>
-                            <td>Divisi/Departement</td>
-                            <td>Aktif</td>
-                            <td>
-                                <a class="badge" href="divisi_edit.html">
-                                    <i class="fa fa-edit"></i>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-    
+
+
+                                <div id="toolbar">
+                                    <div class="add d-flex align-items-center">
+                                        <a href="karyawan_add.html" class="d-flex align-items-center">
+                                            <div
+                                                class="add-btn inline-block d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                            <span>Tambah Data</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <table class="table mt-4 mb-4" id="tablekelas" data-toggle="table" data-search="true"
+                                    data-show-refresh="true" data-pagination="true" data-page-size="5"
+                                    data-page-list="[5,10, All]" data-show-toggle="true" data-side-pagination="client"
+                                    data-resizable="false" data-show-export="true"
+                                    data-export-types="['pdf', 'csv', 'excel']"
+                                    data-export-options='{"fileName": "data_kelas"}' data-click-to-select="true"
+                                    data-toolbar="#toolbar" data-show-columns="true" data-show-pagination-switch="true">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="kode_divisi">Nama</th>
+                                            <th data-field="nama_divisi">NIK</th>
+                                            <th data-field="kantor_divisi">Status</th>
+                                            <th data-field="tipe_divisi">Mulai Kontrak</th>
+                                            <th data-field="status_divisi">Akhir Kontrak</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Lisa Blackpink</td>
+                                            <td>123456789</td>
+                                            <td>Kontak</td>
+                                            <td>01/01/2020</td>
+                                            <td>01/01/2025</td>
+                                            <td>
+                                                <a href="karyawan_edit.html" class="badge badge-warning">
+                                                    Edit
+                                                </a>
+                                                <a href="karyawan_detail.html" class="badge badge-primary">
+                                                    Detail
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    
+                                </table>
+
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
 
             </div>
         </div>
-        <!-- <div class="footer">
-            <div class="float-right">
-                10GB of <strong>250GB</strong> Free.
+        <div class="footer fixed">
+            <div class="float-left">
+                <strong>Copyright 2020 </strong>© ADW Consulting - Human Resource Management System, All Rights Reserved
             </div>
-            <div>
-                <strong>Copyright</strong> Example Company &copy; 2014-2018
-            </div>
-        </div> -->
+        </div>
     </div>
 
 
