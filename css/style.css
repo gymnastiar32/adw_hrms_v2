@@ -10464,7 +10464,7 @@ ul.nav-second-level
   padding: 6px 12px !important;
   margin-right: 40px !important;
   margin-left: 20px !important;
-  min-height: fit-content !important;
+  min-height: 32px !important;
 }
 /* End Top Navbar and Sidebar */
 
