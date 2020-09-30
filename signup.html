@@ -17,7 +17,10 @@
 </head>
 
 <body class="d-flex flex-column">
-    <div class="login-bg"></div>
+    <div class="login-bg">
+        <div class="man-bg"></div>
+        <div class="woman-bg"></div>
+    </div>
     <main class="loginpage my-auto">
         <div class="middle-box text-center loginscreen animated fadeInRightBig">
             <div>
@@ -31,7 +34,8 @@
                     action="empty_page.html">
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><img class="login-icon" src="img/person-outline.svg" alt=""></span>
+                            <span class="input-group-text"><img class="login-icon" src="img/person-outline.svg"
+                                    alt=""></span>
                         </div>
                         <input type="text" class="form-control " placeholder="Username" required>
                         <div class="input-group-append">
@@ -40,7 +44,8 @@
                     </div>
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><img class="login-icon" src="img/envelope-regular.svg" alt=""></span>
+                            <span class="input-group-text"><img class="login-icon" src="img/envelope-regular.svg"
+                                    alt=""></span>
                         </div>
                         <input type="email" class="form-control " placeholder="Email" required>
                         <div class="input-group-append">
@@ -60,7 +65,8 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary block m-b bounce">Sign Up</button>
-                    <p class="text-muted text-center">Already have an account ? <a href="login.html" class="blue-link">Log In</a></p>
+                    <p class="text-muted text-center">Already have an account ? <a href="login.html"
+                            class="blue-link">Log In</a></p>
                 </form>
             </div>
         </div>
@@ -95,7 +101,7 @@
 
     <!-- Show/Hide Password Function -->
     <script>
-        function passwordToggle(){
+        function passwordToggle() {
             var password = document.getElementById("password");
             var showPassword = document.getElementById("showPassword");
             var hidePassword = document.getElementById("hidePassword");

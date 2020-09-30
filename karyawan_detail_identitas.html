@@ -15,7 +15,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/now-ui-kit.css">
     <link href="css/bootstrap-table.css" rel="stylesheet">
-
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
 
 </head>
 
@@ -27,23 +27,10 @@
                 <div class="navbar-brand d-flex align-items-center justify-content-center">
                     <span style="color: #005eb596; font-weight:700; font-size:36px;">HRMS</span>
                 </div>
-                <div class="navbar-header d-flex align-items-center ">
-                    <ul class="nav navbar-mainmenu">
-                        <li class="mr-1"><a href="karyawan.html">Talent</a></li>
-                        <li class="mr-1"><a href="form_cuti.html">Pengajuan Cuti</a></li>
-                        <li class="mr-1"><a href="master_asset.html">Asset</a></li>
-                        <li class="mr-1"><a href="ekpi_master">e-KPI</a></li>
-                        <li><a class="active" href="posisi.html">Master Data</a></li>
-                    </ul>
-                    <!-- <form class="search-form">
-                        <div class="form-group input-group no-border flex-nowrap">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-search"
-                                        style="color: #878F92 ;"></i></span>
-                            </div>
-                            <input type="text" class="form-control " placeholder="Search...">
-                        </div>
-                    </form> -->
+                <div class="navbar-header d-flex align-items-center">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-link" href="#"><i class="fa fa-bars"
+                            style="font-size: 20px;"></i> </a>
+
                 </div>
             </div>
             <ul class="nav navbar-top-links navbar-right d-flex align-items-center flex-nowrap">
@@ -124,7 +111,12 @@
                         </li>
                     </ul>
                 </li>
-                <li class="dropdown">
+                <li>
+                    <a href="login.html" class="logout-btn btn btn-link border">
+                        <i class="fa fa-sign-out-alt"></i> Logout
+                    </a>
+                </li>
+                <!-- <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <img class="cog-icon" src="img/cog.svg" alt="cog-icon">
                     </a>
@@ -137,8 +129,8 @@
                             <a class="dropdown-item" href="login.html"><strong>Log Out</strong></a>
                         </li>
                     </ul>
-                </li>
-                <li class="dropdown profile d-flex flex-column">
+                </li> -->
+                <!-- <li class="dropdown profile d-flex flex-column">
                     <button class="btn-link d-flex align-items-center justify-content-between dropdown-toggle"
                         id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="fas fa-chevron-down"></span>
@@ -147,25 +139,25 @@
                     </button>
                     <ul class="dropdown-menu dropdown-profile">
                         <li>
-                            <div
-                                class="dropdown-profile-box active b-r-xl d-flex align-items-center justify-content-between">
-                                <a class="dropdown-item" href="#">
+                            <a href="#"
+                                class="dropdown-profile-box active d-flex align-items-center justify-content-between">
+                                <span class="dropdown-item" href="#">
                                     <strong>Admin</strong>
-                                </a>
+                                </span>
                                 <div class="role d-flex align-items-center justify-content-center">
                                     <span>H</span>
                                 </div>
-                            </div>
+                            </a>
                         </li>
                         <li>
-                            <div class="dropdown-profile-box b-r-xl d-flex align-items-center justify-content-between">
-                                <a class="dropdown-item" href="#">
+                            <a href="#" class="dropdown-profile-box d-flex align-items-center justify-content-between">
+                                <span class="dropdown-item" href="#">
                                     <strong>User</strong>
-                                </a>
+                                </span>
                                 <div class="role d-flex align-items-center justify-content-center">
                                     <span>U</span>
                                 </div>
-                            </div>
+                            </a>
                         </li>
                         <li class="dropdown-divider"></li>
                         <li>
@@ -176,7 +168,7 @@
                             </div>
                         </li>
                     </ul>
-                </li>
+                </li> -->
             </ul>
 
         </nav>
@@ -270,28 +262,25 @@
             </div>
         </nav>
         <div id="page-wrapper" class="gray-bg">
-            <div class="wrapper border-bottom white-bg page-heading pb-4 mb-4">
+            <div class="wrapper border-bottom white-bg page-heading pb-4 mb-4 mb-4">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h2>Domisili</h2>
+                        <h2>Karyawan</h2>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="#">Master Data</a>
-                            </li>
-                            <li class="breadcrumb-item">
-                                <a href="domisili.html">Posisi</a>
+                                <a href="#">Talent</a>
                             </li>
                             <li class="breadcrumb-item active">
-                                <strong>Edit Posisi</strong>
+                                <strong>Karyawan</strong>
                             </li>
                         </ol>
                     </div>
                 </div>
             </div>
             <div class="wrapper wrapper-content animated fadeInRightBig">
-                <div class="ibox editPage">
+                <div class="ibox detailKaryawan">
                     <div class="ibox-title">
-                        <h5><strong>Ubah Posisi</strong></h5>
+                        <h5><strong>Detail Karyawan</strong></h5>
                         <div class="ibox-tools">
                             <a class="collapse-link">
                                 <i class="fa fa-chevron-up"></i>
@@ -312,120 +301,206 @@
 
                     </div>
                     <div class="ibox-content">
-                        <form>
-                            <div class="form-row">
-                                <div class="col-md-6">
-                                    <label for="namaPosisi">Nama Posisi</label>
-                                    <input type="text" class="form-control no-border" name="namaPosisi" id="namaPosisi"
-                                        value="example">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="namaDivisi" class="mt-3 mt-lg-0">Nama Divisi/Departement</label>
-                                    <select name="namaDivisi" id="namaDivisi" class="form-control">
-                                        <option disabled>Pilih Divisi/Departement</option>
-                                        <option value="Divisi/Departemen1">Divisi/Departemen1</option>
-                                        <option value="Divisi/Departemen2">Divisi/Departemen2</option>
-                                        <option value="Divisi/Departemen3">Divisi/Departemen3</option>
-                                        <option value="Divisi/Departemen4">Divisi/Departemen4</option>
-                                        <option value="Divisi/Departemen5" selected>Divisi/Departemen5</option>
-                                        <option value="Divisi/Departemen6">Divisi/Departemen6</option>
-                                        <option value="Divisi/Departemen7">Divisi/Departemen7</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="namaJobTitle" class="mt-3">Nama Job Title</label>
-                                    <select name="namaJobTitle" id="namaJobTitle" class="form-control">
-                                        <option disabled>Pilih Job Title</option>
-                                        <option value="Job Title1">Job Title1</option>
-                                        <option value="Job Title2">Divisi/Departemen2</option>
-                                        <option value="Job Title3">Divisi/Departemen3</option>
-                                        <option value="Job Title4">Job Title4</option>
-                                        <option value="Job Title5" selected>Job Title5</option>
-                                        <option value="Job Title6">Job Title6</option>
-                                        <option value="Job Title7">Job Title7</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="status" class="mt-3">Status</label>
-                                    <select name="status" id="status" class="form-control">
-                                        <option disabled>Status</option>
-                                        <option value="Opsi1" selected>Opsi1</option>
-                                        <option value="Opsi2">Opsi2</option>
-                                    </select>
-                                </div>
+                        <ul class="nav nav-pills nav-pills-neutral">
+                            <li class="nav-item"><a class="nav-link active"
+                                    href="karyawan_detail_identitas.html">Identitas
+                                    Karyawan</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="karyawan_detail_pengalaman.html">Pengalaman</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="karyawan_detail_lampiran.html">Lampiran</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="karyawan_detail_kontrak.html">Kontrak</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content tab-space">
+                            <div class="tab-pane active" id="pill1">
+                                <form action="">
+                                    <div class="container">
+                                        <div class="form-group row">
+                                            <div class="col-lg-3">
+                                                <label for="nama_depan"><strong> Nama Depan</strong></label>
+                                                <input type="text" name="nama_depan" id="nama_depan"
+                                                    class="form-control" placeholder="Masukkan Nama Depan">
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="nama_belakang" class="mt-3 mt-lg-0"><strong> Nama
+                                                        Belakang</strong></label>
+                                                <input type="text" name="nama_belakang" id="nama_belakang"
+                                                    class="form-control" placeholder="Masukkan Nama Belakang">
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="nik" class="mt-3 mt-lg-0"><strong> NIK</strong></label>
+                                                <input type="text" name="nik" id="nik" class="form-control"
+                                                    placeholder="Masukkan NIK">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row mt-4">
+                                            <div class="col-lg-6">
+                                                <label for="alamat" class="mt-3 mt-lg-0"><strong>
+                                                        Alamat</strong></label>
+                                                <input type="text" name="alamat" id="alamat" class="form-control"
+                                                    placeholder="Masukkan Alamat">
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="kota" class="mt-3 mt-lg-0"><strong> Kota</strong></label>
+                                                <select name="kota" id="kota" class="form-control">
+                                                    <option disabled selected>Pilih Kota</option>
+                                                    <option value="Kota1">Kota1</option>
+                                                    <option value="Kota2">Kota2</option>
+                                                    <option value="Kota3">Kota3</option>
+                                                    <option value="Kota4">Kota4</option>
+                                                    <option value="Kota5">Kota5</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="provinsi" class="mt-3 mt-lg-0"><strong>
+                                                        Provinsi</strong></label>
+                                                <select name="provinsi" id="provinsi" class="form-control">
+                                                    <option disabled selected>Pilih Kota</option>
+                                                    <option value="Provinsi1">Provinsi1</option>
+                                                    <option value="Provinsi2">Provinsi2</option>
+                                                    <option value="Provinsi3">Provinsi3</option>
+                                                    <option value="Provinsi4">Provinsi4</option>
+                                                    <option value="Provinsi5">Provinsi5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row mt-4">
+                                            <div class="col-lg-3">
+                                                <label for="pendidikan_terakhir" class="mt-3 mt-lg-0"><strong>Pendidikan
+                                                        Terakhir</strong></label>
+                                                <select name="pendidikan_terakhir" id="pendidikan_terakhir"
+                                                    class="form-control">
+                                                    <option disabled selected>Pilih Pendidikan Terakhir</option>
+                                                    <option value="SD">SD</option>
+                                                    <option value="SMP">SMP</option>
+                                                    <option value="SMA">SMA</option>
+                                                    <option value="Diploma">Diploma</option>
+                                                    <option value="S1">S1</option>
+                                                    <option value="S2">S2</option>
+                                                    <option value="S3">S3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="no_kontak" class="mt-3 mt-lg-0"><strong>Nomor
+                                                        Kontrak</strong></label>
+                                                <input type="text" name="no_kontak" id="no_kontak" class="form-control"
+                                                    placeholder="Masukkan No Kontak">
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="email_kantor" class="mt-3 mt-lg-0"><strong>Email
+                                                        Kantor</strong></label>
+                                                <input type="text" name="email_kantor" id="email_kantor"
+                                                    class="form-control" placeholder="Masukkan Email Kantor">
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <label for="email_pribadi" class="mt-3 mt-lg-0"><strong> Email
+                                                        Pribadi</strong></label>
+                                                <input type="text" name="email_pribadi" id="email_pribadi"
+                                                    class="form-control" placeholder="Masukkan Email Pribadi">
+                                            </div>
+                                        </div>
+                                        <div class="action clearfix border-top border-top mt-4">
+                                            <button class="btn simpan float-right" type="submit">Simpan</button>
+                                            <a href="karyawan.html" class="btn kembali float-right">
+                                                Kembali
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="action clearfix border-top">
-                                <button class="btn simpan float-right" type="submit">Simpan</button>
-                                <a href="posisi.html" class="btn kembali float-right">
-                                    Kembali
-                                </a>
-                            </div>
-                        </form>
+                        </div>
                     </div>
+                    <!-- <div class="middle-box detailKaryawan">
+                    
+                </div> -->
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <!-- Mainly scripts -->
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+        <!-- Mainly scripts -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+        <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    <!-- Custom and plugin javascript -->
-    <script src="js/inspinia.js"></script>
-    <script src="js/plugins/pace/pace.min.js"></script>
+        <!-- Custom and plugin javascript -->
+        <script src="js/inspinia.js"></script>
+        <script src="js/plugins/pace/pace.min.js"></script>
 
-    <script src="js/bootstrap-table.js"></script>
-    <script src="js/bootstrap-table-export.js"></script>
-    <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
-    <script src="js/now-ui-kit.js?v=1.2.2" type="text/javascript"></script>
+        <script src="js/bootstrap-table.js"></script>
+        <script src="js/bootstrap-table-export.js"></script>
+        <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+        <script src="js/now-ui-kit.js?v=1.2.2" type="text/javascript"></script>
 
-    <script>
-        function numberFormatter(value, row, index) {
-            var options = $('#tablekelas').bootstrapTable('getOptions')
-            // alert(options["pageNumber"] + " " + options["pageSize"])
-            //  console.log(options["pageSize"]);
-            var tes = 0
-            if (!isNaN(options['pageSize'])) { //cek pagesize angka atau tidak, klo angka jalankan kode dibawah
-                tes = ((options["pageNumber"] - 1) * options["pageSize"])
-            }
-            return index + 1 + tes;
-        }
+        <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
 
-        function actionFormatter(value, row, index) {
-            return [
-                '<a href="<?= site_url("Kelas/detail_kelas/") ?>' + value + '" class="btn btn-primary ">Detail</a>',
-                ' ',
-                '<a href="<?= site_url("Kelas/updateform/") ?>' + value + '" class="btn btn-success ">Edit</a>',
-                ' ',
-                '<a href="<?= site_url("Kelas/delete_kelas/") ?>' + value + '" class="btn btn-danger"  >Hapus</a>',
-            ].join('');
-        }
-
-        function detailFormatter(index, row) {
-            var html = []
-            const excludeType = ["Undefined", "object"];
-            $.each(row, function (key, value) {
-                if (!excludeType.includes(typeof value)) {
-                    html.push('<p><b>' + key + ':</b>' + value + '</p>')
+        <script>
+            function numberFormatter(value, row, index) {
+                var options = $('#tablekelas').bootstrapTable('getOptions')
+                // alert(options["pageNumber"] + " " + options["pageSize"])
+                //  console.log(options["pageSize"]);
+                var tes = 0
+                if (!isNaN(options['pageSize'])) { //cek pagesize angka atau tidak, klo angka jalankan kode dibawah
+                    tes = ((options["pageNumber"] - 1) * options["pageSize"])
                 }
-            })
-            return html.join('')
-        }
+                return index + 1 + tes;
+            }
 
-        $(document).ready(function () {
-            var table = $('#tablekelas')
-            var $button = $('#button')
+            function actionFormatter(value, row, index) {
+                return [
+                    '<a href="<?= site_url("Kelas/detail_kelas/") ?>' + value + '" class="btn btn-primary ">Detail</a>',
+                    ' ',
+                    '<a href="<?= site_url("Kelas/updateform/") ?>' + value + '" class="btn btn-success ">Edit</a>',
+                    ' ',
+                    '<a href="<?= site_url("Kelas/delete_kelas/") ?>' + value + '" class="btn btn-danger"  >Hapus</a>',
+                ].join('');
+            }
 
-            $button.click(function () {
-                alert('Kelasnnya :  ' + JSON.stringify(table.bootstrapTable('getSelections')[0]["nama_kelas"]))
+            function detailFormatter(index, row) {
+                var html = []
+                const excludeType = ["Undefined", "object"];
+                $.each(row, function (key, value) {
+                    if (!excludeType.includes(typeof value)) {
+                        html.push('<p><b>' + key + ':</b>' + value + '</p>')
+                    }
+                })
+                return html.join('')
+            }
+
+            $(document).ready(function () {
+                var table = $('#tablekelas')
+                var $button = $('#button')
+
+                $button.click(function () {
+                    alert('Kelasnnya :  ' + JSON.stringify(table.bootstrapTable('getSelections')[0]["nama_kelas"]))
+                })
             })
-        })
-    </script>
+
+            var mem = $('#data_1 .input-group.date').datepicker({
+                todayBtn: "linked",
+                keyboardNavigation: false,
+                forceParse: false,
+                calendarWeeks: true,
+                autoclose: true
+            });
+
+            var mem = $('#data_2 .input-group.date').datepicker({
+                todayBtn: "linked",
+                keyboardNavigation: false,
+                forceParse: false,
+                calendarWeeks: true,
+                autoclose: true
+            });
+
+            $('.custom-file-input').on('change', function () {
+                let fileName = $(this).val().split('\\').pop();
+                $(this).next('.custom-file-label').addClass("selected").html(fileName);
+            }); 
+        </script>
 
 </body>
 

@@ -179,7 +179,7 @@
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="block m-t-xs font-bold">David Williams <i
                                         class="fa fa-chevron-down"></i></span>
-                               
+
                             </a>
                             <div class="privilage">
                                 <span class="block">1 - Kantor Pusat</span>
@@ -190,12 +190,22 @@
                                 <i class="fa fa-cog"></i>
                                 Pengaturan Akun
                             </a>
-                            <ul class="dropdown-menu m-t-xs">
-                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
-                                <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
-                                <li class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                            <ul class="dropdown-menu m-t-xs p-xs pb-4">
+                                <li>
+                                    <a class="dropdown-item border-bottom">
+                                        Admin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item border-bottom">
+                                        Pengelola Katalog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item border-bottom">
+                                        Administrator Application
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <div class="logo-element">
@@ -206,9 +216,9 @@
                         <a href="index.html"><i class="fa fa-user"></i> <span class="nav-label">Talent</span>
                             <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
-                            <li><a href="index.html">Karyawan</a></li>
-                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
-                            <li><a href="dashboard_3.html">Pengajuan Training</a></li>
+                            <li><a href="karyawan.html">Karyawan</a></li>
+                            <li><a href="calon_karyawan.html">Calon Karyawan</a></li>
+                            <li><a href="pengajuan_training.html">Pengajuan Training</a></li>
                         </ul>
                     </li>
                     <li>
@@ -243,15 +253,15 @@
                         <a href="index.html"><i class="fa fa-database"></i> <span class="nav-label">Master Data</span>
                             <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
-                            <li><a href="index.html">Posisi</a></li>
-                            <li><a href="dashboard_2.html">Job Title</a></li>
-                            <li><a href="dashboard_3.html">Divisi/Departemen</a></li>
-                            <li><a href="dashboard_3.html">Template Email</a></li>
-                            <li><a href="dashboard_3.html">Tingkat Pendidikan Terakhir</a></li>
-                            <li><a href="dashboard_3.html">Domisili</a></li>
-                            <li><a href="dashboard_3.html">Hirarki</a></li>
-                            <li><a href="dashboard_3.html">Proyek</a></li>
-                            <li><a href="dashboard_3.html">Menu Management</a></li>
+                            <li><a href="posisi.html">Posisi</a></li>
+                            <li><a href="jobtitle.html">Job Title</a></li>
+                            <li><a href="divisi.html">Divisi/Departemen</a></li>
+                            <li><a href="template_email.html">Template Email</a></li>
+                            <li><a href="tingkat_pddk.html">Tingkat Pendidikan Terakhir</a></li>
+                            <li><a href="domisili.html">Domisili</a></li>
+                            <li><a href="hirarki.html">Hirarki</a></li>
+                            <li><a href="proyek.html">Proyek</a></li>
+                            <li><a href="menu_management.html">Menu Management</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -344,8 +354,9 @@
                                             <td>01/01/2020</td>
                                             <td>01/01/2025</td>
                                             <td>
-                                                <a href="karyawan_edit.html" class="badge badge-warning">
-                                                    Edit
+                                                <a href="karyawan_edit.html" class="badge badge-warning"
+                                                    data-toggle="tooltip" data-placement="top" title="Edit Data">
+                                                    Ubah
                                                 </a>
                                                 <a href="karyawan_detail.html" class="badge badge-primary">
                                                     Detail
@@ -353,7 +364,7 @@
                                             </td>
                                         </tr>
                                     </tbody>
-                                    
+
                                 </table>
 
                             </div>

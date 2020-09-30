@@ -21,502 +21,595 @@
 
 <body>
 
-    <div class="d-flex">
-        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="d-flex">
-                <div class="navbar-brand d-flex align-items-center justify-content-center">
-                    <span style="color: #005eb596; font-weight:700; font-size:36px;">HRMS</span>
-                </div>
-                <div class="navbar-header d-flex align-items-center ">
-                    <ul class="nav navbar-mainmenu">
-                        <li class="mr-1"><a class="active" href="karyawan.html">Talent</a></li>
-                        <li class="mr-1"><a href="form_cuti.html">Pengajuan Cuti</a></li>
-                        <li class="mr-1"><a href="master_asset.html">Asset</a></li>
-                        <li class="mr-1"><a href="ekpi_master">e-KPI</a></li>
-                        <li><a href="posisi.html">Master Data</a></li>
-                    </ul>
-                    <!-- <form class="search-form">
-                        <div class="form-group input-group no-border flex-nowrap">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-search"
-                                        style="color: #878F92 ;"></i></span>
-                            </div>
-                            <input type="text" class="form-control " placeholder="Search...">
-                        </div>
-                    </form> -->
-                </div>
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="d-flex">
+            <div class="navbar-brand d-flex align-items-center justify-content-center">
+                <span style="color: #005eb596; font-weight:700; font-size:36px;">HRMS</span>
             </div>
-            <ul class="nav navbar-top-links navbar-right d-flex align-items-center flex-nowrap">
-                <li class="dropdown">
-                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                        <i class="far fa-envelope"></i> <span class="label label-warning">16</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-messages">
-                        <li>
-                            <div class="dropdown-messages-box">
-                                <div class="media-body">
-                                    <small class="float-right pl-1">46h ago</small>
-                                    <strong>Admin</strong> Submit data on Posisi.
-                                    <br>
-                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <div class="dropdown-messages-box">
-                                <div class="media-body ">
-                                    <small class="float-right pl-1">5h ago</small>
-                                    <strong>User</strong> send a message.
-                                    <br>
-                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <div class="text-center link-block">
-                                <a href="mailbox.html" class="dropdown-item">
-                                    <strong>See All Messages </strong> <i class="fa fa-chevron-right"></i>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                        <i class="far fa-bell"></i> <span class="label label-primary">8</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-alerts">
-                        <li>
-                            <a href="mailbox.html" class="dropdown-item">
-                                <div>
-                                    <strong>1 New data on Posisi</strong>
-                                    <span class="float-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <a href="profile.html" class="dropdown-item">
-                                <div>
-                                    <strong>You have 1 messages</strong>
-                                    <span class="float-right text-muted small">12 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <a href="grid_options.html" class="dropdown-item">
-                                <div>
-                                    <strong>28 New data on Proyek</strong>
-                                    <span class="float-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <div class="text-center link-block">
-                                <a href="alert.html" class="dropdown-item">
-                                    <strong>See All Alerts </strong> <i class="fa fa-chevron-right"></i>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <img class="cog-icon" src="img/cog.svg" alt="cog-icon">
-                    </a>
-                    <ul class="dropdown-menu dropdown-setting" aria-labelledby="dropdownMenuLink">
-                        <li>
-                            <a class="dropdown-item" href="edit_profile.html"><strong>Edit Profile</strong></a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <a class="dropdown-item" href="login.html"><strong>Log Out</strong></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown profile d-flex flex-column">
-                    <button class="btn-link d-flex align-items-center justify-content-between dropdown-toggle"
-                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="fas fa-chevron-down"></span>
-                        <span>Admin</span>
-                        <img class="profile-img" src="img/a4.jpg" alt="">
-                    </button>
-                    <ul class="dropdown-menu dropdown-profile">
-                        <li>
-                            <a href="#"
-                                class="dropdown-profile-box active d-flex align-items-center justify-content-between">
-                                <span class="dropdown-item" href="#">
-                                    <strong>Admin</strong>
-                                </span>
-                                <div class="role d-flex align-items-center justify-content-center">
-                                    <span>H</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="dropdown-profile-box d-flex align-items-center justify-content-between">
-                                <span class="dropdown-item" href="#">
-                                    <strong>User</strong>
-                                </span>
-                                <div class="role d-flex align-items-center justify-content-center">
-                                    <span>U</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <div class="text-center link-block">
-                                <a href="#" class="dropdown-item">
-                                    <strong>See All Users </strong> <i class="fa fa-chevron-right"></i>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="navbar-header d-flex align-items-center">
+                <a class="navbar-minimalize minimalize-styl-2 btn btn-link" href="#"><i class="fa fa-bars"
+                        style="font-size: 20px;"></i> </a>
 
-        </nav>
-    </div>
+            </div>
+        </div>
+        <ul class="nav navbar-top-links navbar-right d-flex align-items-center flex-nowrap">
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="far fa-envelope"></i> <span class="label label-warning">16</span>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <div class="media-body">
+                                <small class="float-right pl-1">46h ago</small>
+                                <strong>Admin</strong> Submit data on Posisi.
+                                <br>
+                                <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <div class="media-body ">
+                                <small class="float-right pl-1">5h ago</small>
+                                <strong>User</strong> send a message.
+                                <br>
+                                <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="mailbox.html" class="dropdown-item">
+                                <strong>See All Messages </strong> <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="far fa-bell"></i> <span class="label label-primary">8</span>
+                </a>
+                <ul class="dropdown-menu dropdown-alerts">
+                    <li>
+                        <a href="mailbox.html" class="dropdown-item">
+                            <div>
+                                <strong>1 New data on Posisi</strong>
+                                <span class="float-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a href="profile.html" class="dropdown-item">
+                            <div>
+                                <strong>You have 1 messages</strong>
+                                <span class="float-right text-muted small">12 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a href="grid_options.html" class="dropdown-item">
+                            <div>
+                                <strong>28 New data on Proyek</strong>
+                                <span class="float-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="alert.html" class="dropdown-item">
+                                <strong>See All Alerts </strong> <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="login.html" class="logout-btn btn btn-link border">
+                    <i class="fa fa-sign-out-alt"></i> Logout
+                </a>
+            </li>
+            <!-- <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <img class="cog-icon" src="img/cog.svg" alt="cog-icon">
+                </a>
+                <ul class="dropdown-menu dropdown-setting" aria-labelledby="dropdownMenuLink">
+                    <li>
+                        <a class="dropdown-item" href="edit_profile.html"><strong>Edit Profile</strong></a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a class="dropdown-item" href="login.html"><strong>Log Out</strong></a>
+                    </li>
+                </ul>
+            </li> -->
+            <!-- <li class="dropdown profile d-flex flex-column">
+                <button class="btn-link d-flex align-items-center justify-content-between dropdown-toggle"
+                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="fas fa-chevron-down"></span>
+                    <span>Admin</span>
+                    <img class="profile-img" src="img/a4.jpg" alt="">
+                </button>
+                <ul class="dropdown-menu dropdown-profile">
+                    <li>
+                        <a href="#"
+                            class="dropdown-profile-box active d-flex align-items-center justify-content-between">
+                            <span class="dropdown-item" href="#">
+                                <strong>Admin</strong>
+                            </span>
+                            <div class="role d-flex align-items-center justify-content-center">
+                                <span>H</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-profile-box d-flex align-items-center justify-content-between">
+                            <span class="dropdown-item" href="#">
+                                <strong>User</strong>
+                            </span>
+                            <div class="role d-flex align-items-center justify-content-center">
+                                <span>U</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="#" class="dropdown-item">
+                                <strong>See All Users </strong> <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li> -->
+        </ul>
+
+    </nav>
     <div id="wrapper">
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse d-flex flex-column">
                 <ul class="nav metismenu" id="side-menu">
-                    <li>
-                        <h2>Talent</h2>
-                    </li>
-                    <li class="nav-link">
-                        <a class="active" href="#"><span class="nav-label">Karyawan</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#"><span class="nav-label">Calon Karyawan</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="pengajuan_training.html"><span class="nav-label">Pengajuan Training</span></a>
-                    </li>
-                </ul>
-                <ul class="nav metismenu">
-                    <li class="nav-link">
-                        <a href="login.html">
-                            <img class="logout-icon" src="img/logout.svg" alt="">
-                            <span class="logout">Log Out</span>
-                        </a>
-                    </li>
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="image" class="rounded" src="img/profile_small.jpg" />
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block m-t-xs font-bold">David Williams <i
+                                        class="fa fa-chevron-down"></i></span>
 
+                            </a>
+                            <div class="privilage">
+                                <span class="block">1 - Kantor Pusat</span>
+                                <span class="block">22 - TEKNOLOGI INFORMASI</span>
+                                <span class="block">1 - ADMINISTRATOR APPLICATION</span>
+                            </div>
+                            <a class="btn btn-link" href="">
+                                <i class="fa fa-cog"></i>
+                                Pengaturan Akun
+                            </a>
+                            <ul class="dropdown-menu m-t-xs">
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+                                <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            HRMS
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-user"></i> <span class="nav-label">Talent</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="karyawan.html">Karyawan</a></li>
+                            <li><a href="calon_karyawan.html">Calon Karyawan</a></li>
+                            <li><a href="pengajuan_training.html">Pengajuan Training</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fas fa-calendar-alt"></i> <span class="nav-label">Pengajuan
+                                Cuti</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Karyawan</a></li>
+                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
+                            <li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-file-alt"></i> <span class="nav-label">Asset</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Karyawan</a></li>
+                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
+                            <li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-project-diagram"></i> <span class="nav-label">e-KPI</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Karyawan</a></li>
+                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
+                            <li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-database"></i> <span class="nav-label">Master Data</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="posisi.html">Posisi</a></li>
+                            <li><a href="jobtitle.html">Job Title</a></li>
+                            <li><a href="divisi.html">Divisi/Departemen</a></li>
+                            <li><a href="template_email.html">Template Email</a></li>
+                            <li><a href="tingkat_pddk.html">Tingkat Pendidikan Terakhir</a></li>
+                            <li><a href="domisili.html">Domisili</a></li>
+                            <li><a href="hirarki.html">Hirarki</a></li>
+                            <li><a href="proyek.html">Proyek</a></li>
+                            <li><a href="menu_management.html">Menu Management</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
-        <div id="page-wrapper">
-            <div class="wrapper border-bottom white-bg page-heading p-0 pb-4">
-                <div class="col-sm-12 p-0">
-                    <h2>Karyawan</h2>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="#">Talent</a>
-                        </li>
-                        <li class="breadcrumb-item active">
-                            <strong>Karyawan</strong>
-                        </li>
-                    </ol>
+        <div id="page-wrapper" class="gray-bg">
+            <div class="wrapper border-bottom white-bg page-heading pb-4 mb-4 mb-4">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Ubah Karyawan</h2>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#">Talent</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="karyawan.html">Karyawan</a>
+                            </li>
+                            <li class="breadcrumb-item active">
+                                <strong>Ubah Data Karyawan</strong>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
             <div class="wrapper wrapper-content animated fadeInRightBig">
-                <div class="middle-box editPage">
-                    <h3 class="border-bottom">Edit Data Karyawan</h3>
-                    <form>
-                        <div class="form-row">
-                            <div class="col-12 pl-4 pr-4">
-                                <h4><strong>Identitas</strong></h4>
-                            </div>
-                            <div class="col-lg-6 p-4">
-                                <label for="nama">Nama Karyawan</label>
-                                <input type="text" class="form-control no-border" name="nama" id="nama" value="example">
-                            </div>
-                            <div class="col-lg-6 p-4">
-                                <label for="nik">NIK</label>
-                                <input type="text" class="form-control no-border" name="nik" id="nik"
-                                    value="35171112010007">
-                            </div>
-                        </div>
-                        <hr class="hr-line-solid">
-                        <div class="form-row">
-                            <div class="col-12 p-4">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h4><strong>Data Diri</strong></h4>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h5 class="m-0 mt-4"><strong>Alamat</strong></h5>
-                                    </div>
-                                    <div class="col-lg-12 mt-4">
-                                        <label for="alamat">Alamat Karyawan</label>
-                                        <input type="text" class="form-control no-border" name="alamat" id="alamat"
-                                            value="Jl. Sesama No. 45 RT/RW 001/01">
-                                    </div>
-                                    <div class="col-lg-4 mt-4">
-                                        <label for="alamat">Kota/Kabupaten</label>
-                                        <input type="text" class="form-control no-border" name="alamat" id="alamat"
-                                            value="Jakarta Timur">
-                                    </div>
-                                    <div class="col-lg-4 mt-4">
-                                        <label for="alamat">Provinsi</label>
-                                        <input type="text" class="form-control no-border" name="alamat" id="alamat"
-                                            value="DKI Jakarta">
-                                    </div>
-                                    <div class="col-lg-4 mt-4">
-                                        <label for="alamat">Kode Pos</label>
-                                        <input type="text" class="form-control no-border" name="alamat" id="alamat"
-                                            value="13820">
-                                    </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <h5><strong>Ubah Data Karyawan</strong></h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#" class="dropdown-item">Config option 1</a>
+                                        </li>
+                                        <li><a href="#" class="dropdown-item">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-12 p-4">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h5 class="m-0 mt-2"><strong>Pengalaman</strong></h5>
+                            <div class="ibox-content addPage">
+                                <form action="">
+                                    <div class="form-group row">
+                                        <div class="col-lg-3">
+                                            <label for="nama_depan"><strong> Nama Depan</strong></label>
+                                            <input type="text" name="nama_depan" id="nama_depan" class="form-control"
+                                                placeholder="Masukkan Nama Depan" value="Lisa">
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="nama_belakang" class="mt-3 mt-lg-0"><strong> Nama
+                                                    Belakang</strong></label>
+                                            <input type="text" name="nama_belakang" id="nama_belakang"
+                                                class="form-control" placeholder="Masukkan Nama Belakang"
+                                                value="Blackpink">
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="nik" class="mt-3 mt-lg-0"><strong> NIK</strong></label>
+                                            <input type="text" name="nik" id="nik" class="form-control"
+                                                placeholder="Masukkan NIK" value="123456789">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row" id="pengalaman">
-                                    <div class="col-lg-11">
+                                    <div class="form-group row mt-4">
+                                        <div class="col-lg-6">
+                                            <label for="alamat" class="mt-3 mt-lg-0"><strong> Alamat</strong></label>
+                                            <input type="text" name="alamat" id="alamat" class="form-control"
+                                                placeholder="Masukkan Alamat"
+                                                value="Jl. Jalan No.00 Kel.Kelurahan, Kec. Kecamatan, Jakarta Timur.">
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="kota" class="mt-3 mt-lg-0"><strong> Kota</strong></label>
+                                            <select name="kota" id="kota" class="form-control">
+                                                <option disabled>Pilih Kota</option>
+                                                <option value="Kota1" selected>Kota1</option>
+                                                <option value="Kota2">Kota2</option>
+                                                <option value="Kota3">Kota3</option>
+                                                <option value="Kota4">Kota4</option>
+                                                <option value="Kota5">Kota5</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="provinsi" class="mt-3 mt-lg-0"><strong>
+                                                    Provinsi</strong></label>
+                                            <select name="provinsi" id="provinsi" class="form-control">
+                                                <option disabled>Pilih Kota</option>
+                                                <option value="Provinsi1" selected>Provinsi1</option>
+                                                <option value="Provinsi2">Provinsi2</option>
+                                                <option value="Provinsi3">Provinsi3</option>
+                                                <option value="Provinsi4">Provinsi4</option>
+                                                <option value="Provinsi5">Provinsi5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mt-4">
+                                        <div class="col-lg-3">
+                                            <label for="pendidikan_terakhir" class="mt-3 mt-lg-0"><strong>Pendidikan
+                                                    Terakhir</strong></label>
+                                            <select name="pendidikan_terakhir" id="pendidikan_terakhir"
+                                                class="form-control">
+                                                <option disabled>Pilih Pendidikan Terakhir</option>
+                                                <option value="SD">SD</option>
+                                                <option value="SMP">SMP</option>
+                                                <option value="SMA">SMA</option>
+                                                <option value="Diploma">Diploma</option>
+                                                <option value="S1" selected>S1</option>
+                                                <option value="S2">S2</option>
+                                                <option value="S3">S3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="no_kontak" class="mt-3 mt-lg-0"><strong>Nomor
+                                                    Kontrak</strong></label>
+                                            <input type="text" name="no_kontak" id="no_kontak" class="form-control"
+                                                placeholder="Masukkan No Kontak" value="0898765861">
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="email_kantor" class="mt-3 mt-lg-0"><strong>Email
+                                                    Kantor</strong></label>
+                                            <input type="text" name="email_kantor" id="email_kantor"
+                                                class="form-control" placeholder="Masukkan Email Kantor"
+                                                value="example@adw.co.id">
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <label for="email_pribadi" class="mt-3 mt-lg-0"><strong> Email
+                                                    Pribadi</strong></label>
+                                            <input type="text" name="email_pribadi" id="email_pribadi"
+                                                class="form-control" placeholder="Masukkan Email Pribadi"
+                                                value="example@gmail.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-4">
+                                        <label for=""><strong>Curicullum Vitae</strong></label>
                                         <div class="row">
-                                            <div class="col-lg-6 mt-4">
-                                                <label for="judul_pengalaman">Judul</label>
-                                                <input type="text" class="form-control no-border"
-                                                    name="judul_pengalaman" id="judul_pengalaman"
-                                                    value="Bekerja di Google">
-                                            </div>
-                                            <div class="col-lg-3 mt-4">
-                                                <div class="form-group" id="data_1">
-                                                    <label class="font-normal">Start Date</label>
-                                                    <div class="input-group date">
-                                                        <div class="input-group-prepend ">
-                                                            <span class="input-group-text border-0"
-                                                                style="background-color: #F0F2F8;"><i
-                                                                    class="far fa-calendar-alt"></i></span>
+                                            <div class="col-sm-12">
+                                                <div class="container">
+                                                    <div class="row input-file">
+                                                        <div class="col-lg-3">
+                                                            <input type="text" name="judul_cv" id="judul_cv"
+                                                                class="form-control" placeholder="Masukkan Judul CV"
+                                                                value="CV Lisa Blackpink">
                                                         </div>
-                                                        <input type="text" class="form-control" placeholder="mm/dd/yyyy"
-                                                            value="12/12/2012">
+                                                        <div class="col-lg-6 mt-3 mt-lg-0">
+                                                            <input type="text" name="deskripsi_dv" id="deskripsi_dv"
+                                                                class="form-control" placeholder="Masukkan Deskripsi CV"
+                                                                value="Data Engineer">
+                                                        </div>
+                                                        <div class="col-lg-3 mt-3 mt-lg-0">
+                                                            <!-- <a class="add-form-btn btn btn-link">
+																<i class="fa fa-paperclip"></i>
+																Masukkan File
+															</a> -->
+                                                            <input type="file" class="form-control" id="file_cv"
+                                                                name="file_cv" accept="image/png, image/jpeg">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-3 mt-4">
-                                                <div class="form-group" id="data_1">
-                                                    <label class="font-normal">End Date</label>
-                                                    <div class="input-group date">
-                                                        <div class="input-group-prepend ">
-                                                            <span class="input-group-text border-0"
-                                                                style="background-color: #F0F2F8;"><i
-                                                                    class="far fa-calendar-alt"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-4">
+                                        <label for=""><strong>Pengalaman</strong></label>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="container">
+                                                    <div class="row input-file">
+                                                        <div class="col-lg-3">
+                                                            <input type="text" name="judul_pengalaman"
+                                                                id="judul_pengalaman" class="form-control"
+                                                                placeholder="Judul" value="Senior Data Engineer">
                                                         </div>
-                                                        <input type="text" class="form-control" placeholder="mm/dd/yyyy"
-                                                            value="12/12/2017">
+                                                        <div class="col-lg-3 mt-3 mt-lg-0">
+                                                            <input type="text" name="perusahaan_pengalaman"
+                                                                id="perusahaan_pengalaman" class="form-control"
+                                                                placeholder="Prusahaan" value="Blackpink">
+                                                        </div>
+                                                        <div class="col-lg-3 mt-3 mt-lg-0" style="height:32px;">
+                                                            <div class="input-group date" data-provide="datepicker">
+                                                                <input type="text" class="form-control" linked="true"
+                                                                    placeholder="Tanggal Mulai" value="01/01/2020">
+                                                                <div class="input-group-addon">
+                                                                    <i class="far fa-calendar-alt"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 mt-3 mt-lg-0" style="height:32px;">
+                                                            <div class="input-group date" data-provide="datepicker">
+                                                                <input type="text" class="form-control" linked="true"
+                                                                    placeholder="Tanggal Akhir" value="01/01/2025">
+                                                                <div class="input-group-addon">
+                                                                    <i class="far fa-calendar-alt"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 mt-3">
+                                                            <select name="status_pengalaman" class="form-control"
+                                                                id="status_pengalaman">
+                                                                <option disabled>Status</option>
+                                                                <option value="Opsi1" selected>Opsi1</option>
+                                                                <option value="Opsi2">Opsi2</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-9 mt-3">
+                                                            <input type="text" name="deskripsi_pengalaman"
+                                                                id="deskripsi_pengalaman" class="form-control"
+                                                                placeholder="Deskripsi" value="Senior Data Engineer">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-12 mt-4">
-                                                <label for="">Deskripsi</label>
-                                                <textarea name="desk-pengalaman" id="desk-pengalaman"
-                                                    class="textarea-form">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde repellendus fugit molestias pariatur facere nesciunt ducimus perferendis, esse quia.
-                                                </textarea>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <a class="add-form-btn btn btn-link mt-3">
+                                                    <span class="badge add-btn">
+                                                        <i class="fa fa-plus"></i>
+                                                    </span>
+                                                    <strong>Tambah Kolom Sertifikat</strong>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <a class="add-form-btn btn btn-link mt-3">
+                                                    <span class="badge delete-btn">
+                                                        <i class="fa fa-times"></i>
+                                                    </span>
+                                                    <strong>Tambah Kolom Sertifikat</strong>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-1 pt-lg-1">
-                                        <a class="remove-form-btn mt-lg-5 mt-3">
-                                            <span class="d-flex align-items-center justify-content-center">
-                                                <i class="fa fa-times"></i>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 mt-5">
-                                        <a class="add-form-btn d-flex align-items-center">
-                                            <span
-                                                class="rounded-circle d-flex justify-content-center align-items-center">
-                                                <i class="fas fa-plus"></i>
-                                            </span>
-                                            &emsp14;
-                                            Tambah Form
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 p-4">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h4 class="m-0 mt-2"><strong>Pendidikan</strong></h4>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6 mt-4">
-                                        <label for="inputState">Tingkat Pendidikan Akhir</label>
-                                        <select id="inputState" class="form-control">
-                                            <option>Pilih...</option>
-                                            <option>SD</option>
-                                            <option>SMP</option>
-                                            <option>SMA</option>
-                                            <option>Diploma</option>
-                                            <option selected>S1</option>
-                                            <option>S2</option>
-                                            <option>S3</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="hr-line-solid">
-                        <div class="form-row">
-                            <div class="col-12 pl-4 pr-4">
-                                <h4><strong>Kontak</strong></h4>
-                            </div>
-                            <!-- <div class="col-md-6 p-4">
-                                <label for="pengalaman">Pengalaman</label>
-                                <textarea class="textarea-form" name="" id="" rows="5"></textarea>
-                            </div> -->
-                            <div class="col-lg-6 p-4">
-                                <label for="email_karyawan">Email Kantor dan Pribadi</label>
-                                <input type="email" class="form-control no-border" name="email_karyawan"
-                                    id="email_karyawan" placeholder="Email Kantor" value="example@adw.co.id">
-                                <input type="email" class="form-control mt-4 no-border" name="email_karyawan"
-                                    id="email_karyawan" placeholder="Email Pribadi" value="example@gmail.com">
-                            </div>
-                            <div class="col-lg-6 p-4">
-                                <label for="phone">No Kontak</label>
-                                <input type="text" class="form-control no-border" name="phone" id="phone"
-                                    placeholder="No Handphone" value="081716302697">
-                            </div>
-                        </div>
-                        <hr class="hr-line-solid">
-                        <div class="form-row">
-                            <div class="col-12 pl-4 pr-4">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h4><strong>Lampiran</strong></h4>
-                                    </div>
-                                </div>
-                                <div class="row" id="sertifikat">
-                                    <div class="col-lg-6 mt-lg-3 mt-4">
-                                        <label for="tipe">Sertifikat</label>
+                                    <div class="form-group mt-4">
+                                        <label for=""><strong>Sertifikat</strong></label>
                                         <div class="row">
-                                            <div class="col-lg-6">
-                                                <input type="text" class="form-control no-border mb-4" name="tipe"
-                                                    id="tipe" value="Judul Sertifikat">
+                                            <div class="col-sm-12">
+                                                <div class="container">
+                                                    <div class="row input-file">
+                                                        <div class="col-lg-3">
+                                                            <input type="text" name="judul_pengalaman"
+                                                                id="judul_pengalaman" class="form-control"
+                                                                placeholder="Judul" value="Lisa Blackpink">
+                                                        </div>
+                                                        <div class="col-lg-3 mt-3 mt-lg-0" style="height:32px;">
+                                                            <div class="input-group date" data-provide="datepicker">
+                                                                <input type="text" class="form-control" linked="true"
+                                                                    placeholder="Tanggal Rilis" value="01/01/2020">
+                                                                <div class="input-group-addon">
+                                                                    <i class="far fa-calendar-alt"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 mt-3 mt-lg-0" style="height:32px;">
+                                                            <div class="input-group date" data-provide="datepicker">
+                                                                <input type="text" class="form-control" linked="true"
+                                                                    placeholder="Tanggal Habis Tempo"
+                                                                    value="01/01/2025">
+                                                                <div class="input-group-addon">
+                                                                    <i class="far fa-calendar-alt"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 mt-3 mt-lg-0">
+                                                            <!-- <a class="add-form-btn btn btn-link">
+																<i class="fa fa-paperclip"></i>
+																Masukkan File
+															</a> -->
+                                                            <input type="file" class="form-control" id="file_cv"
+                                                                name="file_cv" accept="image/png, image/jpeg">
+                                                        </div>
+                                                        <div class="col-lg-3 mt-3">
+                                                            <input type="text" name="judul_pengalaman"
+                                                                id="judul_pengalaman" class="form-control"
+                                                                placeholder="Credential ID" value="123456789">
+                                                        </div>
+                                                        <div class="col-lg-3 mt-3">
+                                                            <input type="text" name="judul_pengalaman"
+                                                                id="judul_pengalaman" class="form-control"
+                                                                placeholder="Credential URL"
+                                                                value="www.credentialurl.com">
+                                                        </div>
+                                                        <div class="col-lg-6 mt-3">
+                                                            <input type="text" name="deskripsi_pengalaman"
+                                                                id="deskripsi_pengalaman" class="form-control"
+                                                                placeholder="Deskripsi" value="Data Engineer">
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-lg-6">
-                                                <div class="custom-file">
-                                                    <input id="logo" type="file" class="custom-file-input">
-                                                    <label for="logo" class="custom-file-label b-r-xl">Pilih
-                                                        File</label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <a class="add-form-btn btn btn-link mt-3">
+                                                    <span class="badge add-btn">
+                                                        <i class="fa fa-plus"></i>
+                                                    </span>
+                                                    <strong>Tambah Kolom Sertifikat</strong>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <a class="add-form-btn btn btn-link mt-3">
+                                                    <span class="badge delete-btn">
+                                                        <i class="fa fa-times"></i>
+                                                    </span>
+                                                    <strong>Tambah Kolom Sertifikat</strong>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mt-4">
+                                        <div class="col-12">
+                                            <label for=""><strong>Kontrak</strong></label>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select name="" id="" class="form-control">
+                                                <option disabled>Status</option>
+                                                <option value="Opsi1" selected>Opsi1</option>
+                                                <option value="Opsi2">Opsi2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 mt-3 mt-lg-0" style="height:32px;">
+                                            <div class="input-group date" data-provide="datepicker">
+                                                <input type="text" class="form-control" linked="true"
+                                                    placeholder="Tanggal Rilis" value="01/01/2020">
+                                                <div class="input-group-addon">
+                                                    <i class="far fa-calendar-alt"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 mt-3 mt-lg-0" style="height:32px;">
+                                            <div class="input-group date" data-provide="datepicker">
+                                                <input type="text" class="form-control" linked="true"
+                                                    placeholder="Tanggal Habis Tempo" value="01/01/2020">
+                                                <div class="input-group-addon">
+                                                    <i class="far fa-calendar-alt"></i>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-1 pt-lg-3">
-                                        <a class="remove-form-btn mt-4">
-                                            <span class="d-flex align-items-center justify-content-center">
-                                                <i class="fa fa-times"></i>
-                                            </span>
+                                    <div class="action clearfix border-top border-top mt-4">
+                                        <button class="btn simpan float-right" type="submit">Simpan</button>
+                                        <a href="karyawan.html" class="btn kembali float-right">
+                                            Kembali
                                         </a>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <a class="add-form-btn mt-lg-4 mt-5 d-flex align-items-center">
-                                            <span
-                                                class="rounded-circle d-flex justify-content-center align-items-center">
-                                                <i class="fas fa-plus"></i>
-                                            </span>
-                                            &emsp14;
-                                            Tambah Form
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="row mt-lg-0 mt-4">
-                                    <div class="col-6 p-4">
-                                        <label for="kantor">CV</label>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <input type="text" class="form-control no-border mb-4" name="tipe"
-                                                    id="tipe" value="Keterangan CV">
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="custom-file">
-                                                    <input id="cv" type="file" class="custom-file-input">
-                                                    <label for="cv" class="custom-file-label b-r-xl">Pilih File</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
-                        <hr class="hr-line-solid">
-                        <div class="form-row">
-                            <div class="col-12 pl-4 pr-4">
-                                <h4><strong>Kontrak</strong></h4>
-                            </div>
-                            <div class="col-lg-4 p-4">
-                                <span>Status</span>
-                                <br>
-                                <div class="form-check form-check-radio form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio1" value="option1"> Freelance
-                                        <span class="form-check-sign"></span>
-                                    </label>
-                                </div>
-                                <div class="form-check form-check-radio form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio2" value="option2"> Kontrak
-                                        <span class="form-check-sign"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 p-4">
-                                <div class="form-group" id="data_1">
-                                    <label class="font-normal">Start Kontrak</label>
-                                    <div class="input-group date">
-                                        <div class="input-group-prepend ">
-                                            <span class="input-group-text border-0"
-                                                style="background-color: #F0F2F8;"><i
-                                                    class="far fa-calendar-alt"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="mm/dd/yyyy"
-                                            value="12/12/17">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 p-4">
-                                <label for="tipe">End Kontrak</label>
-                                <div class="form-group" id="data_1">
-                                    <div class="input-group date">
-                                        <div class="input-group-prepend ">
-                                            <span class="input-group-text border-0"
-                                                style="background-color: #F0F2F8;"><i
-                                                    class="far fa-calendar-alt"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="mm/dd/yyyy"
-                                            value="12/12/22">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="hr-line-solid">
-                        <div class="action clearfix">
-                            <button class="btn simpan float-right" type="submit">Simpan</button>
-                            <a href="karyawan.html" class="btn kembali float-right">
-                                Kembali
-                            </a>
-                        </div>
-                    </form>
+                    </div>
+
                 </div>
+
             </div>
         </div>
     </div>

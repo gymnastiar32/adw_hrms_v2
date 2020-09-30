@@ -27,23 +27,10 @@
                 <div class="navbar-brand d-flex align-items-center justify-content-center">
                     <span style="color: #005eb596; font-weight:700; font-size:36px;">HRMS</span>
                 </div>
-                <div class="navbar-header d-flex align-items-center ">
-                    <ul class="nav navbar-mainmenu">
-                        <li class="mr-1"><a href="karyawan.html">Talent</a></li>
-                        <li class="mr-1"><a href="form_cuti.html">Pengajuan Cuti</a></li>
-                        <li class="mr-1"><a href="master_asset.html">Asset</a></li>
-                        <li class="mr-1"><a href="ekpi_master">e-KPI</a></li>
-                        <li><a class="active" href="posisi.html">Master Data</a></li>
-                    </ul>
-                    <!-- <form class="search-form">
-                        <div class="form-group input-group no-border flex-nowrap">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-search"
-                                        style="color: #878F92 ;"></i></span>
-                            </div>
-                            <input type="text" class="form-control " placeholder="Search...">
-                        </div>
-                    </form> -->
+                <div class="navbar-header d-flex align-items-center">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-link" href="#"><i class="fa fa-bars"
+                            style="font-size: 20px;"></i> </a>
+
                 </div>
             </div>
             <ul class="nav navbar-top-links navbar-right d-flex align-items-center flex-nowrap">
@@ -124,7 +111,12 @@
                         </li>
                     </ul>
                 </li>
-                <li class="dropdown">
+                <li>
+                    <a href="login.html" class="logout-btn btn btn-link border">
+                        <i class="fa fa-sign-out-alt"></i> Logout
+                    </a>
+                </li>
+                <!-- <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <img class="cog-icon" src="img/cog.svg" alt="cog-icon">
                     </a>
@@ -137,8 +129,8 @@
                             <a class="dropdown-item" href="login.html"><strong>Log Out</strong></a>
                         </li>
                     </ul>
-                </li>
-                <li class="dropdown profile d-flex flex-column">
+                </li> -->
+                <!-- <li class="dropdown profile d-flex flex-column">
                     <button class="btn-link d-flex align-items-center justify-content-between dropdown-toggle"
                         id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="fas fa-chevron-down"></span>
@@ -176,7 +168,7 @@
                             </div>
                         </li>
                     </ul>
-                </li>
+                </li> -->
             </ul>
 
         </nav>
@@ -185,87 +177,151 @@
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse d-flex flex-column">
                 <ul class="nav metismenu" id="side-menu">
-                    <li>
-                        <h2>Master Data</h2>
-                    </li>
-                    <li class="nav-link">
-                        <a href="posisi.html"><span class="nav-label">Posisi</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="jobtitle.html"><span class="nav-label">Job Title</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="divisi.html"><span class="nav-label">Divisi/Departement</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="template_email.html"><span class="nav-label">Template Email</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="tingkat_pddk.html"><span class="nav-label">Tingkat Pendidikan Terakhir</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a class="active" href="domisili.html"><span class="nav-label">Domisili</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="hirarki.html"><span class="nav-label">Hirarki</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="proyek.html"><span class="nav-label">Proyek</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="menu_management.html"><span class="nav-label">Menu Management</span></a>
-                    </li>
-                </ul>
-                <ul class="nav metismenu">
-                    <li class="nav-link">
-                        <a href="login.html">
-                            <img class="logout-icon" src="img/logout.svg" alt="">
-                            <span class="logout">Log Out</span>
-                        </a>
-                    </li>
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="image" class="rounded" src="img/profile_small.jpg" />
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block m-t-xs font-bold">David Williams <i
+                                        class="fa fa-chevron-down"></i></span>
 
+                            </a>
+                            <div class="privilage">
+                                <span class="block">1 - Kantor Pusat</span>
+                                <span class="block">22 - TEKNOLOGI INFORMASI</span>
+                                <span class="block">1 - ADMINISTRATOR APPLICATION</span>
+                            </div>
+                            <a class="btn btn-link" href="">
+                                <i class="fa fa-cog"></i>
+                                Pengaturan Akun
+                            </a>
+                            <ul class="dropdown-menu m-t-xs">
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+                                <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            HRMS
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-user"></i> <span class="nav-label">Talent</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="karyawan.html">Karyawan</a></li>
+                            <li><a href="calon_karyawan.html">Calon Karyawan</a></li>
+                            <li><a href="pengajuan_training.html">Pengajuan Training</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fas fa-calendar-alt"></i> <span class="nav-label">Pengajuan
+                                Cuti</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Karyawan</a></li>
+                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
+                            <li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-file-alt"></i> <span class="nav-label">Asset</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Karyawan</a></li>
+                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
+                            <li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-project-diagram"></i> <span class="nav-label">e-KPI</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Karyawan</a></li>
+                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
+                            <li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-database"></i> <span class="nav-label">Master Data</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="posisi.html">Posisi</a></li>
+                            <li><a href="jobtitle.html">Job Title</a></li>
+                            <li><a href="divisi.html">Divisi/Departemen</a></li>
+                            <li><a href="template_email.html">Template Email</a></li>
+                            <li><a href="tingkat_pddk.html">Tingkat Pendidikan Terakhir</a></li>
+                            <li><a href="domisili.html">Domisili</a></li>
+                            <li><a href="hirarki.html">Hirarki</a></li>
+                            <li><a href="proyek.html">Proyek</a></li>
+                            <li><a href="menu_management.html">Menu Management</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
-        <div id="page-wrapper">
-            <div class="wrapper border-bottom white-bg page-heading p-0 pb-4">
-                <div class="col-sm-12 p-0">
-                    <h2>Domisili</h2>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="#">Master Data</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="domisili.html">Domisili</a>
-                        </li>
-                        <li class="breadcrumb-item active">
-                            <strong>Tambah Domisili</strong>
-                        </li>
-                    </ol>
+        <div id="page-wrapper" class="gray-bg">
+            <div class="wrapper border-bottom white-bg page-heading pb-4 mb-4">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Domisili</h2>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#">Master Data</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="domisili.html">Domisili</a>
+                            </li>
+                            <li class="breadcrumb-item active">
+                                <strong>Tambah Domisili</strong>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
             <div class="wrapper wrapper-content animated fadeInRightBig">
-
-                <div class="middle-box addPage">
-                    <h3 class="border-bottom">Tambah Domisili</h3>
-                    <form>
-                        <div class="form-row">
-                            <div class="col-md-6 p-4">
-                                <label for="namaPosisi">Kota/Kabupaten</label>
-                                <input type="text" class="form-control no-border" name="namaPosisi" id="namaPosisi">
-                            </div>
-                            <div class="col-md-6 p-4">
-                                <label for="namaDivisi">Provinsi</label>
-                                <input type="text" class="form-control no-border" name="namaDivisi" id="namaDivisi">
-                            </div>
-                        </div>
-                        <div class="action clearfix">
-                            <button class="btn simpan float-right" type="submit">Simpan</button>
-                            <a href="domisili.html" class="btn kembali float-right">
-                                Kembali
+                <div class="ibox addPage">
+                    <div class="ibox-title">
+                        <h5><strong>Tambah Domisili</strong></h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#" class="dropdown-item">Config option 1</a>
+                                </li>
+                                <li><a href="#" class="dropdown-item">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
                             </a>
                         </div>
-                    </form>
+                    </div>
+                    <div class="ibox-content">
+                        <form>
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <label for="namaPosisi">Kota/Kabupaten</label>
+                                    <input type="text" class="form-control no-border" name="namaPosisi" id="namaPosisi">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="namaDivisi">Provinsi</label>
+                                    <input type="text" class="form-control no-border" name="namaDivisi" id="namaDivisi">
+                                </div>
+                            </div>
+                            <div class="action clearfix border-top">
+                                <button class="btn simpan float-right" type="submit">Simpan</button>
+                                <a href="domisili.html" class="btn kembali float-right">
+                                    Kembali
+                                </a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

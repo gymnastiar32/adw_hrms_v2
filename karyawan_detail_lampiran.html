@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>adw | HRMS</title>
+
+    <!-- <link rel="stylesheet" href="css/now-ui-kit.css"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/all.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/now-ui-kit.css">
+    <link href="css/bootstrap-table.css" rel="stylesheet">
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="d-flex">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="d-flex">
+                <div class="navbar-brand d-flex align-items-center justify-content-center">
+                    <span style="color: #005eb596; font-weight:700; font-size:36px;">HRMS</span>
+                </div>
+                <div class="navbar-header d-flex align-items-center">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-link" href="#"><i class="fa fa-bars"
+                            style="font-size: 20px;"></i> </a>
+
+                </div>
+            </div>
+            <ul class="nav navbar-top-links navbar-right d-flex align-items-center flex-nowrap">
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="far fa-envelope"></i> <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <div class="media-body">
+                                    <small class="float-right pl-1">46h ago</small>
+                                    <strong>Admin</strong> Submit data on Posisi.
+                                    <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <div class="media-body ">
+                                    <small class="float-right pl-1">5h ago</small>
+                                    <strong>User</strong> send a message.
+                                    <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html" class="dropdown-item">
+                                    <strong>See All Messages </strong> <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="far fa-bell"></i> <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html" class="dropdown-item">
+                                <div>
+                                    <strong>1 New data on Posisi</strong>
+                                    <span class="float-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a href="profile.html" class="dropdown-item">
+                                <div>
+                                    <strong>You have 1 messages</strong>
+                                    <span class="float-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a href="grid_options.html" class="dropdown-item">
+                                <div>
+                                    <strong>28 New data on Proyek</strong>
+                                    <span class="float-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="alert.html" class="dropdown-item">
+                                    <strong>See All Alerts </strong> <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="login.html" class="logout-btn btn btn-link border">
+                        <i class="fa fa-sign-out-alt"></i> Logout
+                    </a>
+                </li>
+                <!-- <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <img class="cog-icon" src="img/cog.svg" alt="cog-icon">
+                    </a>
+                    <ul class="dropdown-menu dropdown-setting" aria-labelledby="dropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="edit_profile.html"><strong>Edit Profile</strong></a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item" href="login.html"><strong>Log Out</strong></a>
+                        </li>
+                    </ul>
+                </li> -->
+                <!-- <li class="dropdown profile d-flex flex-column">
+                    <button class="btn-link d-flex align-items-center justify-content-between dropdown-toggle"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fas fa-chevron-down"></span>
+                        <span>Admin</span>
+                        <img class="profile-img" src="img/a4.jpg" alt="">
+                    </button>
+                    <ul class="dropdown-menu dropdown-profile">
+                        <li>
+                            <a href="#"
+                                class="dropdown-profile-box active d-flex align-items-center justify-content-between">
+                                <span class="dropdown-item" href="#">
+                                    <strong>Admin</strong>
+                                </span>
+                                <div class="role d-flex align-items-center justify-content-center">
+                                    <span>H</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-profile-box d-flex align-items-center justify-content-between">
+                                <span class="dropdown-item" href="#">
+                                    <strong>User</strong>
+                                </span>
+                                <div class="role d-flex align-items-center justify-content-center">
+                                    <span>U</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="#" class="dropdown-item">
+                                    <strong>See All Users </strong> <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li> -->
+            </ul>
+
+        </nav>
+    </div>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse d-flex flex-column">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="image" class="rounded" src="img/profile_small.jpg" />
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block m-t-xs font-bold">David Williams <i
+                                        class="fa fa-chevron-down"></i></span>
+
+                            </a>
+                            <div class="privilage">
+                                <span class="block">1 - Kantor Pusat</span>
+                                <span class="block">22 - TEKNOLOGI INFORMASI</span>
+                                <span class="block">1 - ADMINISTRATOR APPLICATION</span>
+                            </div>
+                            <a class="btn btn-link" href="">
+                                <i class="fa fa-cog"></i>
+                                Pengaturan Akun
+                            </a>
+                            <ul class="dropdown-menu m-t-xs">
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+                                <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            HRMS
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-user"></i> <span class="nav-label">Talent</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="karyawan.html">Karyawan</a></li>
+                            <li><a href="calon_karyawan.html">Calon Karyawan</a></li>
+                            <li><a href="pengajuan_training.html">Pengajuan Training</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fas fa-calendar-alt"></i> <span class="nav-label">Pengajuan
+                                Cuti</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Karyawan</a></li>
+                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
+                            <li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-file-alt"></i> <span class="nav-label">Asset</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Karyawan</a></li>
+                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
+                            <li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-project-diagram"></i> <span class="nav-label">e-KPI</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Karyawan</a></li>
+                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
+                            <li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-database"></i> <span class="nav-label">Master Data</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="posisi.html">Posisi</a></li>
+                            <li><a href="jobtitle.html">Job Title</a></li>
+                            <li><a href="divisi.html">Divisi/Departemen</a></li>
+                            <li><a href="template_email.html">Template Email</a></li>
+                            <li><a href="tingkat_pddk.html">Tingkat Pendidikan Terakhir</a></li>
+                            <li><a href="domisili.html">Domisili</a></li>
+                            <li><a href="hirarki.html">Hirarki</a></li>
+                            <li><a href="proyek.html">Proyek</a></li>
+                            <li><a href="menu_management.html">Menu Management</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper" class="gray-bg">
+            <div class="wrapper border-bottom white-bg page-heading pb-4 mb-4 mb-4">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Karyawan</h2>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#">Talent</a>
+                            </li>
+                            <li class="breadcrumb-item active">
+                                <strong>Karyawan</strong>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper wrapper-content animated fadeInRightBig">
+                <div class="ibox detailKaryawan">
+                    <div class="ibox-title">
+                        <h5><strong>Detail Karyawan</strong></h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#" class="dropdown-item">Config option 1</a>
+                                </li>
+                                <li><a href="#" class="dropdown-item">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="ibox-content">
+                        <ul class="nav nav-pills nav-pills-neutral">
+                            <li class="nav-item"><a class="nav-link" href="karyawan_detail_identitas.html">Identitas
+                                    Karyawan</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="karyawan_detail_pengalaman.html">Pengalaman</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link active"
+                                    href="karyawan_detail_lampiran.html">Lampiran</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="karyawan_detail_kontrak.html">Kontrak</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content tab-space">
+                            <div class="tab-pane active" id="pill3">
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <table class="table mt-4 mb-4" data-toggle="table"
+                                                data-pagination="true" data-page-size="5"
+                                                data-page-list="[5,10, All]"
+                                                data-side-pagination="client" data-resizable="false"
+                                                data-click-to-select="true">
+                                                <thead>
+                                                    <tr>
+                                                        <th data-field="kode_divisi">Judul</th>
+                                                        <th data-field="nama_divisi">Tanggal Rilis</th>
+                                                        <th data-field="kantor_divisi">Tanggal Jatuh Tempo</th>
+                                                        <th data-field="tipe_divisi">Credential ID</th>
+                                                        <th data-field="crendential_url">Credential URLS</th>
+                                                        <th data-field="deskripsi_sertifikat">Deskripsi</th>
+                                                        <th>Link</th>
+                                                        <th>Aksi</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Lisa Blackpink</td>
+                                                        <td>01/01/2020</td>
+                                                        <td>01/01/2025</td>
+                                                        <td>123456789</td>
+                                                        <td>www.example.com</td>
+                                                        <td data-field="deskripsi_sertifikat">Lorem, ipsum dolor sit
+                                                            amet consectetur adipisicing
+                                                            elit. Natus quam eos nisi reiciendis officia impedit
+                                                            fugiat sapiente perspiciatis architecto modi?</td>
+                                                        <td>
+                                                            <a href="img/a1.jpg" class="ancor-lampiran">
+                                                                Link
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="badge badge-warning my-1"
+                                                                style="width: 70px;">
+                                                                Ubah
+                                                            </a>
+                                                            <a href="#" class="badge badge-danger my-1"
+                                                                style="width: 70px;">
+                                                                Hapus
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <form action="">
+                                        <div class="form-group mb-5">
+                                            <label for=""><strong>Sertifikat</strong></label>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="container">
+                                                        <div class="row input-file">
+                                                            <div class="col-lg-3">
+                                                                <input type="text" name="judul_pengalaman"
+                                                                    id="judul_pengalaman" class="form-control"
+                                                                    placeholder="Judul">
+                                                            </div>
+                                                            <div class="col-lg-3 mt-3 mt-lg-0" style="height:32px;">
+                                                                <div class="input-group date" data-provide="datepicker">
+                                                                    <input type="text" class="form-control"
+                                                                        linked="true" placeholder="Tanggal Rilis">
+                                                                    <div class="input-group-addon">
+                                                                        <i class="far fa-calendar-alt"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 mt-3 mt-lg-0" style="height:32px;">
+                                                                <div class="input-group date" data-provide="datepicker">
+                                                                    <input type="text" class="form-control"
+                                                                        linked="true" placeholder="Tanggal Habis Tempo">
+                                                                    <div class="input-group-addon">
+                                                                        <i class="far fa-calendar-alt"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 mt-3 mt-lg-0">
+                                                                <!-- <a class="add-form-btn btn btn-link">
+                                                                        <i class="fa fa-paperclip"></i>
+                                                                        Masukkan File
+                                                                    </a> -->
+                                                                <input type="file" class="form-control" id="file_cv"
+                                                                    name="file_cv" accept="image/png, image/jpeg">
+                                                            </div>
+                                                            <div class="col-lg-3 mt-3">
+                                                                <input type="text" name="judul_pengalaman"
+                                                                    id="judul_pengalaman" class="form-control"
+                                                                    placeholder="Credential ID">
+                                                            </div>
+                                                            <div class="col-lg-3 mt-3">
+                                                                <input type="text" name="judul_pengalaman"
+                                                                    id="judul_pengalaman" class="form-control"
+                                                                    placeholder="Credential URL">
+                                                            </div>
+                                                            <div class="col-lg-6 mt-3">
+                                                                <input type="text" name="deskripsi_pengalaman"
+                                                                    id="deskripsi_pengalaman" class="form-control"
+                                                                    placeholder="Deskripsi">
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="action clearfix border-top mt-4">
+                                                                    <button class="btn simpan float-right"
+                                                                        type="submit">Simpan</button>
+                                                                    <button type="reset"
+                                                                        class="btn kembali float-right">
+                                                                        Reset
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <table class="table mt-4 mb-4" data-toggle="table"
+                                            data-pagination="true" data-page-size="5"
+                                            data-page-list="[5,10, All]"
+                                            data-side-pagination="client" data-resizable="false"
+                                            data-click-to-select="true">
+                                                <thead>
+                                                    <tr>
+                                                        <th data-field="kode_divisi">Judul</th>
+                                                        <th data-field="nama_divisi">Deskripsi</th>
+                                                        <th data-field="kantor_divisi">File</th>
+                                                        <th>Aksi</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Lisa Blackpink</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                            elit. Voluptates necessitatibus sapiente veniam soluta
+                                                            cum impedit omnis quaerat tenetur est illum?</td>
+                                                        <td>
+                                                            <a href="img/a1.jpg" class="ancor-lampiran">
+                                                                Link
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="badge badge-warning my-1"
+                                                                style="width: 70px;">
+                                                                Ubah
+                                                            </a>
+                                                            <a href="#" class="badge badge-danger my-1"
+                                                                style="width: 70px;">
+                                                                Hapus
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label for=""><strong>Curicullum Vitae</strong></label>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="container">
+                                                        <div class="row input-file">
+                                                            <div class="col-lg-3">
+                                                                <input type="text" name="judul_cv" id="judul_cv"
+                                                                    class="form-control"
+                                                                    placeholder="Masukkan Judul CV">
+                                                            </div>
+                                                            <div class="col-lg-6 mt-3 mt-lg-0">
+                                                                <input type="text" name="deskripsi_dv" id="deskripsi_dv"
+                                                                    class="form-control"
+                                                                    placeholder="Masukkan Deskripsi CV">
+                                                            </div>
+                                                            <div class="col-lg-3 mt-3 mt-lg-0">
+                                                                <!-- <a class="add-form-btn btn btn-link">
+                                                                    <i class="fa fa-paperclip"></i>
+                                                                    Masukkan File
+                                                                </a> -->
+                                                                <input type="file" class="form-control" id="file_cv"
+                                                                    name="file_cv" accept="image/png, image/jpeg">
+                                                            </div>
+                                                            <div class="col-12 mt-3 mt-lg-0">
+                                                                <div class="action clearfix border-top mt-4">
+                                                                    <button class="btn simpan float-right"
+                                                                        type="submit">Simpan</button>
+                                                                    <button type="reset"
+                                                                        class="btn kembali float-right">
+                                                                        Reset
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="middle-box detailKaryawan">
+                    
+                </div> -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Mainly scripts -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+        <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+        <!-- Custom and plugin javascript -->
+        <script src="js/inspinia.js"></script>
+        <script src="js/plugins/pace/pace.min.js"></script>
+
+        <script src="js/bootstrap-table.js"></script>
+        <script src="js/bootstrap-table-export.js"></script>
+        <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+        <script src="js/now-ui-kit.js?v=1.2.2" type="text/javascript"></script>
+
+        <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+        <script>
+            function numberFormatter(value, row, index) {
+                var options = $('#tablekelas').bootstrapTable('getOptions')
+                // alert(options["pageNumber"] + " " + options["pageSize"])
+                //  console.log(options["pageSize"]);
+                var tes = 0
+                if (!isNaN(options['pageSize'])) { //cek pagesize angka atau tidak, klo angka jalankan kode dibawah
+                    tes = ((options["pageNumber"] - 1) * options["pageSize"])
+                }
+                return index + 1 + tes;
+            }
+
+            function actionFormatter(value, row, index) {
+                return [
+                    '<a href="<?= site_url("Kelas/detail_kelas/") ?>' + value + '" class="btn btn-primary ">Detail</a>',
+                    ' ',
+                    '<a href="<?= site_url("Kelas/updateform/") ?>' + value + '" class="btn btn-success ">Edit</a>',
+                    ' ',
+                    '<a href="<?= site_url("Kelas/delete_kelas/") ?>' + value + '" class="btn btn-danger"  >Hapus</a>',
+                ].join('');
+            }
+
+            function detailFormatter(index, row) {
+                var html = []
+                const excludeType = ["Undefined", "object"];
+                $.each(row, function (key, value) {
+                    if (!excludeType.includes(typeof value)) {
+                        html.push('<p><b>' + key + ':</b>' + value + '</p>')
+                    }
+                })
+                return html.join('')
+            }
+
+            $(document).ready(function () {
+                var table = $('#tablekelas')
+                var $button = $('#button')
+
+                $button.click(function () {
+                    alert('Kelasnnya :  ' + JSON.stringify(table.bootstrapTable('getSelections')[0]["nama_kelas"]))
+                })
+            })
+
+            var mem = $('#data_1 .input-group.date').datepicker({
+                todayBtn: "linked",
+                keyboardNavigation: false,
+                forceParse: false,
+                calendarWeeks: true,
+                autoclose: true
+            });
+
+            var mem = $('#data_2 .input-group.date').datepicker({
+                todayBtn: "linked",
+                keyboardNavigation: false,
+                forceParse: false,
+                calendarWeeks: true,
+                autoclose: true
+            });
+
+            $('.custom-file-input').on('change', function () {
+                let fileName = $(this).val().split('\\').pop();
+                $(this).next('.custom-file-label').addClass("selected").html(fileName);
+            }); 
+        </script>
+
+</body>
+
+</html>

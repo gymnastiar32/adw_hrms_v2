@@ -21,258 +21,341 @@
 
 <body>
 
-    <div class="d-flex">
-        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="d-flex">
-                <div class="navbar-brand d-flex align-items-center justify-content-center">
-                    <span style="color: #005eb596; font-weight:700; font-size:36px;">HRMS</span>
-                </div>
-                <div class="navbar-header d-flex align-items-center ">
-                    <ul class="nav navbar-mainmenu">
-                        <li class="mr-1"><a class="active" href="karyawan.html">Talent</a></li>
-                        <li class="mr-1"><a href="form_cuti.html">Pengajuan Cuti</a></li>
-                        <li class="mr-1"><a href="master_asset.html">Asset</a></li>
-                        <li class="mr-1"><a href="ekpi_master">e-KPI</a></li>
-                        <li><a href="posisi.html">Master Data</a></li>
-                    </ul>
-                    <!-- <form class="search-form">
-                        <div class="form-group input-group no-border flex-nowrap">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-search"
-                                        style="color: #878F92 ;"></i></span>
-                            </div>
-                            <input type="text" class="form-control " placeholder="Search...">
-                        </div>
-                    </form> -->
-                </div>
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="d-flex">
+            <div class="navbar-brand d-flex align-items-center justify-content-center">
+                <span style="color: #005eb596; font-weight:700; font-size:36px;">HRMS</span>
             </div>
-            <ul class="nav navbar-top-links navbar-right d-flex align-items-center flex-nowrap">
-                <li class="dropdown">
-                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                        <i class="far fa-envelope"></i> <span class="label label-warning">16</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-messages">
-                        <li>
-                            <div class="dropdown-messages-box">
-                                <div class="media-body">
-                                    <small class="float-right pl-1">46h ago</small>
-                                    <strong>Admin</strong> Submit data on Posisi.
-                                    <br>
-                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <div class="dropdown-messages-box">
-                                <div class="media-body ">
-                                    <small class="float-right pl-1">5h ago</small>
-                                    <strong>User</strong> send a message.
-                                    <br>
-                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <div class="text-center link-block">
-                                <a href="mailbox.html" class="dropdown-item">
-                                    <strong>See All Messages </strong> <i class="fa fa-chevron-right"></i>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                        <i class="far fa-bell"></i> <span class="label label-primary">8</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-alerts">
-                        <li>
-                            <a href="mailbox.html" class="dropdown-item">
-                                <div>
-                                    <strong>1 New data on Posisi</strong>
-                                    <span class="float-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <a href="profile.html" class="dropdown-item">
-                                <div>
-                                    <strong>You have 1 messages</strong>
-                                    <span class="float-right text-muted small">12 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <a href="grid_options.html" class="dropdown-item">
-                                <div>
-                                    <strong>28 New data on Proyek</strong>
-                                    <span class="float-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <div class="text-center link-block">
-                                <a href="alert.html" class="dropdown-item">
-                                    <strong>See All Alerts </strong> <i class="fa fa-chevron-right"></i>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <img class="cog-icon" src="img/cog.svg" alt="cog-icon">
-                    </a>
-                    <ul class="dropdown-menu dropdown-setting" aria-labelledby="dropdownMenuLink">
-                        <li>
-                            <a class="dropdown-item" href="edit_profile.html"><strong>Edit Profile</strong></a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <a class="dropdown-item" href="login.html"><strong>Log Out</strong></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown profile d-flex flex-column">
-                    <button class="btn-link d-flex align-items-center justify-content-between dropdown-toggle"
-                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="fas fa-chevron-down"></span>
-                        <span>Admin</span>
-                        <img class="profile-img" src="img/a4.jpg" alt="">
-                    </button>
-                    <ul class="dropdown-menu dropdown-profile">
-                        <li>
-                            <a href="#"
-                                class="dropdown-profile-box active d-flex align-items-center justify-content-between">
-                                <span class="dropdown-item" href="#">
-                                    <strong>Admin</strong>
-                                </span>
-                                <div class="role d-flex align-items-center justify-content-center">
-                                    <span>H</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="dropdown-profile-box d-flex align-items-center justify-content-between">
-                                <span class="dropdown-item" href="#">
-                                    <strong>User</strong>
-                                </span>
-                                <div class="role d-flex align-items-center justify-content-center">
-                                    <span>U</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <div class="text-center link-block">
-                                <a href="#" class="dropdown-item">
-                                    <strong>See All Users </strong> <i class="fa fa-chevron-right"></i>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="navbar-header d-flex align-items-center">
+                <a class="navbar-minimalize minimalize-styl-2 btn btn-link" href="#"><i class="fa fa-bars"
+                        style="font-size: 20px;"></i> </a>
 
-        </nav>
-    </div>
+            </div>
+        </div>
+        <ul class="nav navbar-top-links navbar-right d-flex align-items-center flex-nowrap">
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="far fa-envelope"></i> <span class="label label-warning">16</span>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <div class="media-body">
+                                <small class="float-right pl-1">46h ago</small>
+                                <strong>Admin</strong> Submit data on Posisi.
+                                <br>
+                                <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="dropdown-messages-box">
+                            <div class="media-body ">
+                                <small class="float-right pl-1">5h ago</small>
+                                <strong>User</strong> send a message.
+                                <br>
+                                <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="mailbox.html" class="dropdown-item">
+                                <strong>See All Messages </strong> <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                    <i class="far fa-bell"></i> <span class="label label-primary">8</span>
+                </a>
+                <ul class="dropdown-menu dropdown-alerts">
+                    <li>
+                        <a href="mailbox.html" class="dropdown-item">
+                            <div>
+                                <strong>1 New data on Posisi</strong>
+                                <span class="float-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a href="profile.html" class="dropdown-item">
+                            <div>
+                                <strong>You have 1 messages</strong>
+                                <span class="float-right text-muted small">12 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a href="grid_options.html" class="dropdown-item">
+                            <div>
+                                <strong>28 New data on Proyek</strong>
+                                <span class="float-right text-muted small">4 minutes ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="alert.html" class="dropdown-item">
+                                <strong>See All Alerts </strong> <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="login.html" class="logout-btn btn btn-link border">
+                    <i class="fa fa-sign-out-alt"></i> Logout
+                </a>
+            </li>
+            <!-- <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <img class="cog-icon" src="img/cog.svg" alt="cog-icon">
+                </a>
+                <ul class="dropdown-menu dropdown-setting" aria-labelledby="dropdownMenuLink">
+                    <li>
+                        <a class="dropdown-item" href="edit_profile.html"><strong>Edit Profile</strong></a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a class="dropdown-item" href="login.html"><strong>Log Out</strong></a>
+                    </li>
+                </ul>
+            </li> -->
+            <!-- <li class="dropdown profile d-flex flex-column">
+                <button class="btn-link d-flex align-items-center justify-content-between dropdown-toggle"
+                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="fas fa-chevron-down"></span>
+                    <span>Admin</span>
+                    <img class="profile-img" src="img/a4.jpg" alt="">
+                </button>
+                <ul class="dropdown-menu dropdown-profile">
+                    <li>
+                        <a href="#"
+                            class="dropdown-profile-box active d-flex align-items-center justify-content-between">
+                            <span class="dropdown-item" href="#">
+                                <strong>Admin</strong>
+                            </span>
+                            <div class="role d-flex align-items-center justify-content-center">
+                                <span>H</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-profile-box d-flex align-items-center justify-content-between">
+                            <span class="dropdown-item" href="#">
+                                <strong>User</strong>
+                            </span>
+                            <div class="role d-flex align-items-center justify-content-center">
+                                <span>U</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <div class="text-center link-block">
+                            <a href="#" class="dropdown-item">
+                                <strong>See All Users </strong> <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li> -->
+        </ul>
+
+    </nav>
     <div id="wrapper">
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse d-flex flex-column">
                 <ul class="nav metismenu" id="side-menu">
-                    <li>
-                        <h2>Talent</h2>
-                    </li>
-                    <li class="nav-link">
-                        <a class="active" href="#"><span class="nav-label">Karyawan</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#"><span class="nav-label">Calon Karyawan</span></a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="pengajuan_training.html"><span class="nav-label">Pengajuan Training</span></a>
-                    </li>
-                </ul>
-                <ul class="nav metismenu">
-                    <li class="nav-link">
-                        <a href="login.html">
-                            <img class="logout-icon" src="img/logout.svg" alt="">
-                            <span class="logout">Log Out</span>
-                        </a>
-                    </li>
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="image" class="rounded" src="img/profile_small.jpg" />
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block m-t-xs font-bold">David Williams <i
+                                        class="fa fa-chevron-down"></i></span>
 
+                            </a>
+                            <div class="privilage">
+                                <span class="block">1 - Kantor Pusat</span>
+                                <span class="block">22 - TEKNOLOGI INFORMASI</span>
+                                <span class="block">1 - ADMINISTRATOR APPLICATION</span>
+                            </div>
+                            <a class="btn btn-link" href="">
+                                <i class="fa fa-cog"></i>
+                                Pengaturan Akun
+                            </a>
+                            <ul class="dropdown-menu m-t-xs">
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+                                <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            HRMS
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-user"></i> <span class="nav-label">Talent</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="karyawan.html">Karyawan</a></li>
+                            <li><a href="calon_karyawan.html">Calon Karyawan</a></li>
+                            <li><a href="pengajuan_training.html">Pengajuan Training</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fas fa-calendar-alt"></i> <span class="nav-label">Pengajuan
+                                Cuti</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Karyawan</a></li>
+                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
+                            <li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-file-alt"></i> <span class="nav-label">Asset</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Karyawan</a></li>
+                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
+                            <li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-project-diagram"></i> <span class="nav-label">e-KPI</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Karyawan</a></li>
+                            <li><a href="dashboard_2.html">Calon Karyawan</a></li>
+                            <li><a href="dashboard_3.html">Pengajuan Cuti</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-database"></i> <span class="nav-label">Master Data</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="posisi.html">Posisi</a></li>
+                            <li><a href="jobtitle.html">Job Title</a></li>
+                            <li><a href="divisi.html">Divisi/Departemen</a></li>
+                            <li><a href="template_email.html">Template Email</a></li>
+                            <li><a href="tingkat_pddk.html">Tingkat Pendidikan Terakhir</a></li>
+                            <li><a href="domisili.html">Domisili</a></li>
+                            <li><a href="hirarki.html">Hirarki</a></li>
+                            <li><a href="proyek.html">Proyek</a></li>
+                            <li><a href="menu_management.html">Menu Management</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
-        <div id="page-wrapper" class="pb-5">
-            <div class="wrapper border-bottom white-bg page-heading p-0 pb-4">
-                <div class="col-sm-12 p-0">
-                    <h2>Karyawan</h2>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="#">Talent</a>
-                        </li>
-                        <li class="breadcrumb-item active">
-                            <strong>Karyawan</strong>
-                        </li>
-                    </ol>
+        <div id="page-wrapper" class="pb-5 gray-bg">
+            <div class="wrapper border-bottom white-bg page-heading pb-4 mb-4 mb-4">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Karyawan</h2>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#">Talent</a>
+                            </li>
+                            <li class="breadcrumb-item active">
+                                <strong>Karyawan</strong>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
             <div class="wrapper wrapper-content animated fadeInRightBig">
-                <div id="toolbar">
-                    <div class="add d-flex align-items-center">
-                        <a href="karyawan_add.html" class="d-flex align-items-center">
-                            <div class="rounded-circle inline-block d-flex justify-content-center align-items-center">
-                                <i class="fas fa-plus"></i>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h5><strong>Tabel Data Karyawan</strong></h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#" class="dropdown-item">Config option 1</a>
+                                        </li>
+                                        <li><a href="#" class="dropdown-item">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
                             </div>
-                            <span>Tambah Data</span>
-                        </a>
+                            <div class="ibox-content">
+
+
+                                <div id="toolbar">
+                                    <div class="add d-flex align-items-center">
+                                        <a href="karyawan_add.html" class="d-flex align-items-center">
+                                            <div
+                                                class="add-btn inline-block d-flex justify-content-center align-items-center">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                            <span>Tambah Data</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <table class="table mt-4 mb-4" id="tablekelas" data-toggle="table" data-search="true"
+                                    data-show-refresh="true" data-pagination="true" data-page-size="5"
+                                    data-page-list="[5,10, All]" data-show-toggle="true" data-side-pagination="client"
+                                    data-resizable="false" data-show-export="true"
+                                    data-export-types="['pdf', 'csv', 'excel']"
+                                    data-export-options='{"fileName": "data_kelas"}' data-click-to-select="true"
+                                    data-toolbar="#toolbar" data-show-columns="true" data-show-pagination-switch="true">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="kode_divisi">Nama</th>
+                                            <th data-field="nama_divisi">NIK</th>
+                                            <th data-field="kantor_divisi">Status</th>
+                                            <th data-field="tipe_divisi">Mulai Kontrak</th>
+                                            <th data-field="status_divisi">Akhir Kontrak</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Lisa Blackpink</td>
+                                            <td>123456789</td>
+                                            <td>Kontak</td>
+                                            <td>01/01/2020</td>
+                                            <td>01/01/2025</td>
+                                            <td>
+                                                <a href="karyawan_edit.html" class="badge badge-warning"
+                                                    data-toggle="tooltip" data-placement="top" title="Edit Data">
+                                                    Ubah
+                                                </a>
+                                                <a href="karyawan_detail_identitas.html" class="badge badge-primary">
+                                                    Detail
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-                <table class="table border-0 mt-4 mb-4" id="tablekelas" data-toggle="table" data-search="true"
-                    data-show-refresh="true" data-pagination="true" data-page-size="5" data-page-list="[5,10, All]"
-                    data-show-toggle="true" data-side-pagination="client" data-resizable="false" data-show-export="true"
-                    data-export-types="['pdf', 'csv', 'excel']" data-export-options='{"fileName": "data_kelas"}'
-                    data-click-to-select="true" data-toolbar="#toolbar" data-show-columns="true"
-                    data-show-pagination-switch="true">
-                    <thead>
-                        <tr>
-                            <th data-field="nama_karyawan">Nama</th>
-                            <th data-field="nik">NIK</th>
-                            <th data-field="email_kantor_pribadi">Email Kantor & Pribadi</th>
-                            <th data-field="status_karyawan">Status</th>
-                            <th data-field="start_kontrak">Start Kontrak</th>
-                            <th data-field="end_kontrak">End Kontrak</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-field="nama_karyawan">example</td>
-                            <td data-field="nik">35171112010007</td>
-                            <td data-field="email_kantor_pribadi">example@gmail.com <br> example@gmail.com
-                            </td>
-                            <td data-field="status_karyawan">Aktif</td>
-                            <th data-field="start_kontrak">12/12/2017</th>
-                            <th data-field="end_kontrak">12/12/2023</th>
-                            <td>
-                                <a class="badge badge-warning" href="karyawan_edit.html" data-toggle="tooltip"
-                                    data-placement="top" title="Edit">
-                                    <i class="fa fa-edit"></i>
-                                </a>
-                                <a class="badge badge-primary" href="karyawan_detail.html" data-toggle="tooltip" data-placement="top"
-                                    title="Detaik">
-                                    <i class="fa fa-search-plus"></i>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
             <div class="footer">
                 <div class="float-left pl-3 pr-3">
